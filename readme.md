@@ -19,3 +19,4 @@ cd ../vio
 ./sample_vio_ov9712_dvp_8_0 8 0
 
 
+![result](./doc/1363530651.jpg)
