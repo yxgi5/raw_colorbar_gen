@@ -1,0 +1,1 @@
+run_tcl -fg raw_colorbar_raw_colorbar_synplify.tcl

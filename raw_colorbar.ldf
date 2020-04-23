@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="raw_colorbar" device="LCMXO3LF-9400C-6BG484C" default_implementation="raw_colorbar">
+    <Options/>
+    <Implementation title="raw_colorbar" dir="raw_colorbar" description="raw_colorbar" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="top" top="top"/>
+        <Source name="top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="clarity/pll_sensor_clk.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="raw_colorbar_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="raw_colorbar.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="raw_colorbar/raw_colorbar.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="test.rvl" type="Reveal" type_short="Reveal">
+            <Options/>
+        </Source>
+        <Source name="untitled.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="raw_colorbar1.sty"/>
+</BaliProject>

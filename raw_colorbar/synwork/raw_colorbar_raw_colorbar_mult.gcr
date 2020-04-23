@@ -1,0 +1,207 @@
+i u_pll_sensor_clk.CLKOP
+m 0 0
+u 88 289
+n ckid0_0 {t:ENCRYPTED} Black box on clock path
+p {t:u_pll_sensor_clk.PLLInst_0.CLKOP}{p:u_pll_sensor_clk.CLKOP}{t:u_pll_sensor_clk.CLKOP}{t:w_pixclk.I[0]}{t:w_pixclk.OUT[0]}{t:u_raw_colorbar_gen.clk}{p:u_raw_colorbar_gen.clk}{t:u_raw_colorbar_gen.linecnt[9:0].C}
+e ckid0_1 {t:u_raw_colorbar_gen.linecnt[9:0].C} dffr
+d ckid0_2 {t:u_pll_sensor_clk.PLLInst_0.CLKOP} EHXPLLJ Black box on clock path
+i top_reveal_coretop_instance.jtck_i[0]
+m 0 0
+u 58 281
+n ckid0_3 {t:ENCRYPTED} Black box on clock path
+p {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtck}{t:top_reveal_coretop_instance.jtck_inferred_clock[0].I[0]}{t:top_reveal_coretop_instance.jtck_inferred_clock[0].OUT[0]}{t:top_reveal_coretop_instance.top_la0_inst_0.jtck}{p:top_reveal_coretop_instance.top_la0_inst_0.jtck}{t:top_reveal_coretop_instance.top_la0_inst_0.tm_u.jtck}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_3 {t:ENCRYPTED} dffr
+d ckid0_3 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtck} jtagconn16 Black box on clock path
+i w_lv
+m 0 0
+u 0 0
+d ckid0_4 {t:u_raw_colorbar_gen.lv} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_raw_colorbar_gen.lv
+m 0 0
+u 0 0
+d ckid0_5 {t:u_raw_colorbar_gen.lv.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_fv
+m 0 0
+u 0 0
+d ckid0_6 {t:u_raw_colorbar_gen.fv} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_raw_colorbar_gen.fv
+m 0 0
+u 0 0
+d ckid0_7 {t:u_raw_colorbar_gen.fv.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_pixdata[9]
+m 0 0
+u 0 0
+d ckid0_8 {t:u_raw_colorbar_gen.data[9]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i u_raw_colorbar_gen.raw_data[0]
+m 0 0
+u 0 0
+d ckid0_9 {t:u_raw_colorbar_gen.raw_data[0].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i w_pixdata[8]
+m 0 0
+u 0 0
+d ckid0_10 {t:u_raw_colorbar_gen.data[8]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[7]
+m 0 0
+u 0 0
+d ckid0_11 {t:u_raw_colorbar_gen.data[7]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[6]
+m 0 0
+u 0 0
+d ckid0_12 {t:u_raw_colorbar_gen.data[6]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[5]
+m 0 0
+u 0 0
+d ckid0_13 {t:u_raw_colorbar_gen.data[5]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[4]
+m 0 0
+u 0 0
+d ckid0_14 {t:u_raw_colorbar_gen.data[4]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[3]
+m 0 0
+u 0 0
+d ckid0_15 {t:u_raw_colorbar_gen.data[3]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[2]
+m 0 0
+u 0 0
+d ckid0_16 {t:u_raw_colorbar_gen.data[2]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[1]
+m 0 0
+u 0 0
+d ckid0_17 {t:u_raw_colorbar_gen.data[1]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i w_pixdata[0]
+m 0 0
+u 0 0
+d ckid0_18 {t:u_raw_colorbar_gen.data[0]} raw_colorbar_gen_uniq_1 Clock source is invalid for GCC
+i top_reveal_coretop_instance.ip_enable[0]
+m 0 0
+u 0 0
+d ckid0_19 {t:top_reveal_coretop_instance.jtagconn16_inst_0.ip_enable} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jshift[0]
+m 0 0
+u 0 0
+d ckid0_20 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jshift} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jtdi[0]
+m 0 0
+u 0 0
+d ckid0_21 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jtdi} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jce2[0]
+m 0 0
+u 0 0
+d ckid0_22 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jce2} jtagconn16 Black box on clock path
+i top_reveal_coretop_instance.jrstn[0]
+m 0 0
+u 0 0
+d ckid0_23 {t:top_reveal_coretop_instance.jtagconn16_inst_0.jrstn} jtagconn16 Black box on clock path
+i u_raw_colorbar_gen.pix_rgb_4[0]
+m 0 0
+u 0 0
+d ckid0_24 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb[0]
+m 0 0
+u 0 0
+d ckid0_25 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i u_raw_colorbar_gen.pix_rgb_4[1]
+m 0 0
+u 0 0
+d ckid0_26 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[2]
+m 0 0
+u 0 0
+d ckid0_27 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[3]
+m 0 0
+u 0 0
+d ckid0_28 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[4]
+m 0 0
+u 0 0
+d ckid0_29 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[5]
+m 0 0
+u 0 0
+d ckid0_30 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[6]
+m 0 0
+u 0 0
+d ckid0_31 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[7]
+m 0 0
+u 0 0
+d ckid0_32 {t:u_raw_colorbar_gen.pix_rgb[0].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[8]
+m 0 0
+u 0 0
+d ckid0_33 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb[8]
+m 0 0
+u 0 0
+d ckid0_34 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i u_raw_colorbar_gen.pix_rgb_4[9]
+m 0 0
+u 0 0
+d ckid0_35 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[10]
+m 0 0
+u 0 0
+d ckid0_36 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[11]
+m 0 0
+u 0 0
+d ckid0_37 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[12]
+m 0 0
+u 0 0
+d ckid0_38 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[13]
+m 0 0
+u 0 0
+d ckid0_39 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[14]
+m 0 0
+u 0 0
+d ckid0_40 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[15]
+m 0 0
+u 0 0
+d ckid0_41 {t:u_raw_colorbar_gen.pix_rgb[8].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[16]
+m 0 0
+u 0 0
+d ckid0_42 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb[16]
+m 0 0
+u 0 0
+d ckid0_43 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+i u_raw_colorbar_gen.pix_rgb_4[17]
+m 0 0
+u 0 0
+d ckid0_44 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[18]
+m 0 0
+u 0 0
+d ckid0_45 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[19]
+m 0 0
+u 0 0
+d ckid0_46 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[20]
+m 0 0
+u 0 0
+d ckid0_47 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[21]
+m 0 0
+u 0 0
+d ckid0_48 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[22]
+m 0 0
+u 0 0
+d ckid0_49 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_raw_colorbar_gen.pix_rgb_4[23]
+m 0 0
+u 0 0
+d ckid0_50 {t:u_raw_colorbar_gen.pix_rgb[16].Q[0]} dffr Clock source is invalid for GCC
+i u_pll_sensor_clk.CLKOS
+m 0 0
+u 0 0
+d ckid0_51 {t:u_pll_sensor_clk.PLLInst_0.CLKOS} EHXPLLJ Black box on clock path
+l 0 0 0 0 0

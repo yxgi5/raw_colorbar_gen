@@ -1,0 +1,1383 @@
+
+Loading design for application trce from file raw_colorbar_raw_colorbar.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-9400C
+Package:     CABGA484
+Performance: 6
+Loading device for application trce from file 'xo3c9400.nph' in environment: /opt/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.6.
+Performance Hardware Data Status:   Final          Version 37.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
+Thu Apr 23 09:47:25 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o raw_colorbar_raw_colorbar.twr -gui -msgset /home/andy/Downloads/tmp/raw_colorbar/promote.xml raw_colorbar_raw_colorbar.ncd raw_colorbar_raw_colorbar.prf 
+Design file:     raw_colorbar_raw_colorbar.ncd
+Preference file: raw_colorbar_raw_colorbar.prf
+Device,speed:    LCMXO3LF-9400C,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk24M" 24.180000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "w_pixclk" 40.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 8.024ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.843ns  (51.3% logic, 48.7% route), 17 logic levels.
+
+ Constraint Details:
+
+     16.843ns physical path delay u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.024ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19B.CLK to     R26C19B.Q1 u_raw_colorbar_gen/SLICE_38 (from w_pixclk)
+ROUTE         3     0.794     R26C19B.Q1 to     R26C20A.B1 u_raw_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.684     R26C20A.B1 to    R26C20A.FCO u_raw_colorbar_gen/SLICE_36
+ROUTE         1     0.000    R26C20A.FCO to    R26C20B.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.130    R26C20B.FCI to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.843   (51.3% logic, 48.7% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.066ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[11]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.801ns  (51.3% logic, 48.7% route), 16 logic levels.
+
+ Constraint Details:
+
+     16.801ns physical path delay u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.066ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19C.CLK to     R26C19C.Q0 u_raw_colorbar_gen/SLICE_37 (from w_pixclk)
+ROUTE         3     0.779     R26C19C.Q0 to     R26C20B.A0 u_raw_colorbar_gen/color_cntr[11]
+C0TOFCO_DE  ---     0.787     R26C20B.A0 to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.801   (51.3% logic, 48.7% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19C.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.127ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.740ns  (51.0% logic, 49.0% route), 17 logic levels.
+
+ Constraint Details:
+
+     16.740ns physical path delay u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.127ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19B.CLK to     R26C19B.Q1 u_raw_colorbar_gen/SLICE_38 (from w_pixclk)
+ROUTE         3     0.794     R26C19B.Q1 to     R26C20A.B1 u_raw_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.684     R26C20A.B1 to    R26C20A.FCO u_raw_colorbar_gen/SLICE_36
+ROUTE         1     0.000    R26C20A.FCO to    R26C20B.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.130    R26C20B.FCI to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B1 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R24C19B.B1 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.740   (51.0% logic, 49.0% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.127ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.740ns  (51.0% logic, 49.0% route), 17 logic levels.
+
+ Constraint Details:
+
+     16.740ns physical path delay u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.127ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19B.CLK to     R26C19B.Q1 u_raw_colorbar_gen/SLICE_38 (from w_pixclk)
+ROUTE         3     0.794     R26C19B.Q1 to     R26C20A.B1 u_raw_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.684     R26C20A.B1 to    R26C20A.FCO u_raw_colorbar_gen/SLICE_36
+ROUTE         1     0.000    R26C20A.FCO to    R26C20B.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.130    R26C20B.FCI to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A1 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C18B.A1 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.740   (51.0% logic, 49.0% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.134ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.733ns  (53.1% logic, 46.9% route), 18 logic levels.
+
+ Constraint Details:
+
+     16.733ns physical path delay u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.134ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19B.CLK to     R26C19B.Q1 u_raw_colorbar_gen/SLICE_38 (from w_pixclk)
+ROUTE         3     0.794     R26C19B.Q1 to     R26C20A.B1 u_raw_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.684     R26C20A.B1 to    R26C20A.FCO u_raw_colorbar_gen/SLICE_36
+ROUTE         1     0.000    R26C20A.FCO to    R26C20B.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.130    R26C20B.FCI to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     0.800     R24C19D.F0 to     R25C19B.A0 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C19B.A0 to    R25C19B.FCO u_raw_colorbar_gen/SLICE_23
+ROUTE         1     0.000    R25C19B.FCO to    R25C19C.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.130    R25C19C.FCI to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.733   (53.1% logic, 46.9% route), 18 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.169ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[11]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.698ns  (51.0% logic, 49.0% route), 16 logic levels.
+
+ Constraint Details:
+
+     16.698ns physical path delay u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.169ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19C.CLK to     R26C19C.Q0 u_raw_colorbar_gen/SLICE_37 (from w_pixclk)
+ROUTE         3     0.779     R26C19C.Q0 to     R26C20B.A0 u_raw_colorbar_gen/color_cntr[11]
+C0TOFCO_DE  ---     0.787     R26C20B.A0 to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B1 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R24C19B.B1 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.698   (51.0% logic, 49.0% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19C.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.169ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[11]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.698ns  (51.0% logic, 49.0% route), 16 logic levels.
+
+ Constraint Details:
+
+     16.698ns physical path delay u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.169ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19C.CLK to     R26C19C.Q0 u_raw_colorbar_gen/SLICE_37 (from w_pixclk)
+ROUTE         3     0.779     R26C19C.Q0 to     R26C20B.A1 u_raw_colorbar_gen/color_cntr[11]
+C1TOFCO_DE  ---     0.684     R26C20B.A1 to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.698   (51.0% logic, 49.0% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19C.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.169ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[11]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.698ns  (51.0% logic, 49.0% route), 16 logic levels.
+
+ Constraint Details:
+
+     16.698ns physical path delay u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.169ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19C.CLK to     R26C19C.Q0 u_raw_colorbar_gen/SLICE_37 (from w_pixclk)
+ROUTE         3     0.779     R26C19C.Q0 to     R26C20B.A0 u_raw_colorbar_gen/color_cntr[11]
+C0TOFCO_DE  ---     0.787     R26C20B.A0 to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A1 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C18B.A1 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.698   (51.0% logic, 49.0% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19C.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.176ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[11]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.691ns  (53.0% logic, 47.0% route), 17 logic levels.
+
+ Constraint Details:
+
+     16.691ns physical path delay u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.176ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_37 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19C.CLK to     R26C19C.Q0 u_raw_colorbar_gen/SLICE_37 (from w_pixclk)
+ROUTE         3     0.779     R26C19C.Q0 to     R26C20B.A0 u_raw_colorbar_gen/color_cntr[11]
+C0TOFCO_DE  ---     0.787     R26C20B.A0 to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.069     R25C20D.F0 to     R24C19B.B0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19B.B0 to    R24C19B.FCO u_raw_colorbar_gen/SLICE_19
+ROUTE         1     0.000    R24C19B.FCO to    R24C19C.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_7
+FCITOFCO_D  ---     0.130    R24C19C.FCI to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     0.800     R24C19D.F0 to     R25C19B.A0 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C19B.A0 to    R25C19B.FCO u_raw_colorbar_gen/SLICE_23
+ROUTE         1     0.000    R25C19B.FCO to    R25C19C.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_7
+FCITOFCO_D  ---     0.130    R25C19C.FCI to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.691   (53.0% logic, 47.0% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19C.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 8.194ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/color_cntr[10]  (from w_pixclk +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/raw_data[0]  (to w_pixclk +)
+
+   Delay:              16.673ns  (51.1% logic, 48.9% route), 16 logic levels.
+
+ Constraint Details:
+
+     16.673ns physical path delay u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 8.194ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_38 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367    R26C19B.CLK to     R26C19B.Q1 u_raw_colorbar_gen/SLICE_38 (from w_pixclk)
+ROUTE         3     0.794     R26C19B.Q1 to     R26C20A.B1 u_raw_colorbar_gen/color_cntr[10]
+C1TOFCO_DE  ---     0.684     R26C20A.B1 to    R26C20A.FCO u_raw_colorbar_gen/SLICE_36
+ROUTE         1     0.000    R26C20A.FCO to    R26C20B.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_5
+FCITOFCO_D  ---     0.130    R26C20B.FCI to    R26C20B.FCO u_raw_colorbar_gen/SLICE_35
+ROUTE         1     0.000    R26C20B.FCO to    R26C20C.FCI u_raw_colorbar_gen/mult1_un54_sum_cry_7
+FCITOF0_DE  ---     0.450    R26C20C.FCI to     R26C20C.F0 u_raw_colorbar_gen/SLICE_34
+ROUTE         1     1.387     R26C20C.F0 to     R25C20C.B1 u_raw_colorbar_gen/mult1_un54_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R25C20C.B1 to    R25C20C.FCO u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000    R25C20C.FCO to    R25C20D.FCI u_raw_colorbar_gen/mult1_un61_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C20D.FCI to     R25C20D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         5     1.029     R25C20D.F0 to     R24C19C.A0 u_raw_colorbar_gen/mult1_un61_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R24C19C.A0 to    R24C19C.FCO u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000    R24C19C.FCO to    R24C19D.FCI u_raw_colorbar_gen/mult1_un68_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C19D.FCI to     R24C19D.F0 u_raw_colorbar_gen/SLICE_17
+ROUTE         5     1.143     R24C19D.F0 to     R25C19C.B1 u_raw_colorbar_gen/mult1_un68_sum_s_10_0_S0
+C1TOFCO_DE  ---     0.684     R25C19C.B1 to    R25C19C.FCO u_raw_colorbar_gen/SLICE_22
+ROUTE         1     0.000    R25C19C.FCO to    R25C19D.FCI u_raw_colorbar_gen/mult1_un75_sum_cry_9
+FCITOF0_DE  ---     0.450    R25C19D.FCI to     R25C19D.F0 u_raw_colorbar_gen/SLICE_21
+ROUTE         5     0.794     R25C19D.F0 to     R25C18B.A0 u_raw_colorbar_gen/mult1_un75_sum_s_10_0_S0
+C0TOFCO_DE  ---     0.787     R25C18B.A0 to    R25C18B.FCO u_raw_colorbar_gen/SLICE_27
+ROUTE         1     0.000    R25C18B.FCO to    R25C18C.FCI u_raw_colorbar_gen/mult1_un82_sum_cry_7
+FCITOF0_DE  ---     0.450    R25C18C.FCI to     R25C18C.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.387     R25C18C.F0 to     R24C18C.B1 u_raw_colorbar_gen/mult1_un82_sum_cry_8_0_S0
+C1TOFCO_DE  ---     0.684     R24C18C.B1 to    R24C18C.FCO u_raw_colorbar_gen/SLICE_30
+ROUTE         1     0.000    R24C18C.FCO to    R24C18D.FCI u_raw_colorbar_gen/mult1_un89_sum_cry_9
+FCITOF0_DE  ---     0.450    R24C18D.FCI to     R24C18D.F0 u_raw_colorbar_gen/SLICE_29
+ROUTE         7     0.838     R24C18D.F0 to     R23C18D.B1 u_raw_colorbar_gen/mult1_un89_sum_s_10_0_S0
+CTOF_DEL    ---     0.408     R23C18D.B1 to     R23C18D.F1 u_raw_colorbar_gen/SLICE_543
+ROUTE         1     0.785     R23C18D.F1 to     R23C18B.B0 u_raw_colorbar_gen/raw_data_RNO_4[0]
+CTOOFX_DEL  ---     0.601     R23C18B.B0 to   R23C18B.OFX0 u_raw_colorbar_gen/SLICE_398
+ROUTE         1     0.000   R23C18B.OFX0 to    R23C18B.DI0 u_raw_colorbar_gen/raw_data_8[0] (to w_pixclk)
+                  --------
+                   16.673   (51.1% logic, 48.9% route), 16 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R26C19B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_398:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     1.564     LPLL.CLKOP to    R23C18B.CLK w_pixclk
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   58.907MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk24M" 24.180000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "w_pixclk" 40.000000 MHz  |             |             |
+;                                       |   40.000 MHz|   58.907 MHz|  17  
+                                        |             |             |
+FREQUENCY NET "pixclk_c" 40.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: w_pixclk   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 186
+   Covered under: FREQUENCY NET "w_pixclk" 40.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+
+Clock Domain: u_pll_sensor_clk/CLKFB_t   Source: u_pll_sensor_clk/PLLInst_0.CLKINTFB   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 199
+   No transfer within this clock domain is found
+
+Clock Domain: clk24M   Source: u_OSCH.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1090642 paths, 4 nets, and 4443 connections (95.47% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
+Thu Apr 23 09:47:25 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o raw_colorbar_raw_colorbar.twr -gui -msgset /home/andy/Downloads/tmp/raw_colorbar/promote.xml raw_colorbar_raw_colorbar.ncd raw_colorbar_raw_colorbar.prf 
+Design file:     raw_colorbar_raw_colorbar.ncd
+Preference file: raw_colorbar_raw_colorbar.prf
+Device,speed:    LCMXO3LF-9400C,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk24M" 24.180000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "w_pixclk" 40.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         Sync_RAM   Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0/RAM0  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/FF_0  (to w_pixclk +)
+
+   Delay:               0.276ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.289ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKTOF_DEL  ---     0.276    R20C23A.WCK to     R20C23A.F0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 (from w_pixclk)
+ROUTE         1     0.000     R20C23A.F0 to    R20C23A.DI0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/dataout0_ffin (to w_pixclk)
+                  --------
+                    0.276   (100.0% logic, 0.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R20C23A.WCK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R20C23A.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         Sync_RAM   Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0/RAM0  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/FF_0  (to w_pixclk +)
+
+   Delay:               0.276ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.289ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKTOF_DEL  ---     0.276    R21C24A.WCK to     R21C24A.F0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 (from w_pixclk)
+ROUTE         1     0.000     R21C24A.F0 to    R21C24A.DI0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/dataout0_ffin (to w_pixclk)
+                  --------
+                    0.276   (100.0% logic, 0.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C24A.WCK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C24A.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         Sync_RAM   Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0/RAM0  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/FF_1  (to w_pixclk +)
+
+   Delay:               0.276ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.289ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKTOF_DEL  ---     0.276    R21C24A.WCK to     R21C24A.F1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0 (from w_pixclk)
+ROUTE         1     0.000     R21C24A.F1 to    R21C24A.DI1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/dataout1_ffin (to w_pixclk)
+                  --------
+                    0.276   (100.0% logic, 0.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C24A.WCK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_1/genblk1.te_tt_dist_ram/mem_0_0.0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C24A.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         Sync_RAM   Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0/RAM0  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/FF_1  (to w_pixclk +)
+
+   Delay:               0.276ns  (100.0% logic, 0.0% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.276ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.289ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKTOF_DEL  ---     0.276    R20C23A.WCK to     R20C23A.F1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0 (from w_pixclk)
+ROUTE         1     0.000     R20C23A.F1 to    R20C23A.DI1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/dataout1_ffin (to w_pixclk)
+                  --------
+                    0.276   (100.0% logic, 0.0% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R20C23A.WCK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/te_2/genblk1.te_tt_dist_ram/mem_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R20C23A.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[1]  (to w_pixclk +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R13C24C.CLK to     R13C24C.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144 (from w_pixclk)
+ROUTE         1     0.152     R13C24C.Q0 to     R13C24C.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[0] (to w_pixclk)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C24C.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_144:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C24C.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.304ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[1]  (to w_pixclk +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R12C27B.CLK to     R12C27B.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153 (from w_pixclk)
+ROUTE         1     0.152     R12C27B.Q0 to     R12C27B.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[0] (to w_pixclk)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R12C27B.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_153:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R12C27B.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[2]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[3]  (to w_pixclk +)
+
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.287ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R13C27B.CLK to     R13C27B.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598 (from w_pixclk)
+ROUTE         2     0.154     R13C27B.Q0 to     R13C27B.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/capture_reclk[2] (to w_pixclk)
+                  --------
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C27B.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_598:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C27B.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d1[0]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d2[0]  (to w_pixclk +)
+
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.287ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R21C25D.CLK to     R21C25D.Q0 top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562 (from w_pixclk)
+ROUTE         6     0.154     R21C25D.Q0 to     R21C25D.M1 top_reveal_coretop_instance/top_la0_inst_0/trig_u/tu_1/input_a_d1[0] (to w_pixclk)
+                  --------
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C25D.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/trig_u/SLICE_562:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.824     LPLL.CLKOP to    R21C25D.CLK w_pixclk
+                  --------
+                    0.824   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.307ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[2]  (from w_pixclk +)
+   Destination:    FF         Data in        top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[3]  (to w_pixclk +)
+
+   Delay:               0.288ns  (46.2% logic, 53.8% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.288ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.307ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R13C28C.CLK to     R13C28C.Q0 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597 (from w_pixclk)
+ROUTE         5     0.155     R13C28C.Q0 to     R13C28C.M1 top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/jupdate_reclk[2] (to w_pixclk)
+                  --------
+                    0.288   (46.2% logic, 53.8% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C28C.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/jtag_int_u/SLICE_597:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C28C.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.314ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr[4]  (from w_pixclk +)
+   Destination:    DP8KC      Port           top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr3711204837112048p13a97a65_0_0_9(ASIC)  (to w_pixclk +)
+
+   Delay:               0.420ns  (31.7% logic, 68.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.420ns physical path delay top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_99 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr3711204837112048p13a97a65_0_0_9 meets
+      0.052ns ADDR_HLD and
+      0.000ns delay constraint less
+     -0.054ns skew requirement (totaling 0.106ns) by 0.314ns
+
+ Physical Path Details:
+
+      Data path top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_99 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr3711204837112048p13a97a65_0_0_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R13C33C.CLK to     R13C33C.Q1 top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_99 (from w_pixclk)
+ROUTE        13     0.287     R13C33C.Q1 to *R_R15C32.ADA6 top_reveal_coretop_instance/top_la0_inst_0/tm_u/tm_wr_addr_cntr[4] (to w_pixclk)
+                  --------
+                    0.420   (31.7% logic, 68.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/SLICE_99:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.804     LPLL.CLKOP to    R13C33C.CLK w_pixclk
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to top_reveal_coretop_instance/top_la0_inst_0/tm_u/genblk4.tr_mem/pmi_ram_dpXbnonesadr3711204837112048p13a97a65_0_0_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       186     0.858     LPLL.CLKOP to *R_R15C32.CLKA w_pixclk
+                  --------
+                    0.858   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk24M" 24.180000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "w_pixclk" 40.000000 MHz  |             |             |
+;                                       |     0.000 ns|     0.289 ns|   1  
+                                        |             |             |
+FREQUENCY NET "pixclk_c" 40.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: w_pixclk   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 186
+   Covered under: FREQUENCY NET "w_pixclk" 40.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+
+Clock Domain: u_pll_sensor_clk/CLKFB_t   Source: u_pll_sensor_clk/PLLInst_0.CLKINTFB   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 199
+   No transfer within this clock domain is found
+
+Clock Domain: clk24M   Source: u_OSCH.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1090642 paths, 4 nets, and 4443 connections (95.47% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

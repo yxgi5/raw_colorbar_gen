@@ -1,0 +1,37 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO3LF-9400C-6BG484C
+family = MachXO3LF
+device = LCMXO3LF-9400C
+speed = 6
+package = CABGA484
+operation = Commercial
+
+#design options
+[Design]
+title = raw_colorbar
+path = /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar
+core_generate = /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar
+search_path = /home/andy/Downloads/tmp/raw_colorbar
+top = top
+lpf = /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar.lpf
+synthesis = synplify
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+/home/andy/Downloads/tmp/raw_colorbar/top.v = Verilog
+/home/andy/Downloads/tmp/raw_colorbar/clarity/pll_sensor_clk.v = Verilog
+/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar_gen.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
+/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
+/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work

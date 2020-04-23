@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.11.0.396.4.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Apr 23 09:47:12 2020
+
+/opt/lscc/diamond/3.11_x64/ispfpga/bin/lin64/par -f
+raw_colorbar_raw_colorbar.p2t raw_colorbar_raw_colorbar_map.ncd
+raw_colorbar_raw_colorbar.dir raw_colorbar_raw_colorbar.prf -gui -msgset
+/home/andy/Downloads/tmp/raw_colorbar/promote.xml
+
+
+Preference file: raw_colorbar_raw_colorbar.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            8.024        0            0.289        0            11           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 11 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

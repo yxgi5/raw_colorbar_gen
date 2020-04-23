@@ -1,0 +1,18 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/machxo3lf.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/machxo3lf.v":1696:7:1696:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":730:7:730:27|Synthesizing module pll_sensor_clk_uniq_1 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":805:7:805:29|Synthesizing module raw_colorbar_gen_uniq_1 in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/synpbase/lib/lucent/machxo3lf.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+@N: CG364 :"/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@N: CG364 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":77:7:77:9|Synthesizing module top in library work.
+@N: CL189 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":86:4:86:9|Register bit reset_n is always 1.
+@N: CL159 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":55:7:55:13|Input reset_n is unused.
+@N: CL159 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_gen.v":68:7:68:16|Input trigger_en is unused.
+@N|Running in 64-bit mode
+

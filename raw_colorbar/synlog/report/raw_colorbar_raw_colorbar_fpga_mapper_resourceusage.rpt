@@ -1,0 +1,27 @@
+Resource Usage Report
+Part: lcmxo3lf_9400c-6
+
+Register bits: 546 of 9400 (6%)
+PIC Latch:       0
+I/O cells:       14
+
+Details:
+CCU2D:          102
+EHXPLLJ:        1
+FD1P3AX:        18
+FD1P3BX:        33
+FD1P3DX:        360
+FD1S3AX:        39
+FD1S3BX:        5
+FD1S3DX:        91
+GSR:            1
+INV:            21
+L6MUX21:        3
+OB:             13
+OBZ:            1
+ORCALUT4:       643
+OSCH:           1
+PFUMX:          28
+PUR:            1
+VHI:            15
+VLO:            16

@@ -1,0 +1,108 @@
+#Start recording tcl command: 4/22/2020 11:07:49
+#Project Location: /home/andy/Downloads/tmp/raw_colorbar; Project name: raw_colorbar
+prj_project new -name "raw_colorbar" -impl "raw_colorbar" -dev LCMXO3LF-9400C-6BG484C -synthesis "synplify"
+prj_project save
+prj_src add "/home/andy/Downloads/tmp/raw_colorbar/top.v"
+prj_src add "/home/andy/Downloads/tmp/raw_colorbar/clarity/pll_sensor_clk.ipx"
+prj_src add "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar_gen.v"
+prj_run Map -impl raw_colorbar
+prj_run Translate -impl raw_colorbar
+prj_run Translate -impl raw_colorbar
+prj_run Export -impl raw_colorbar -task Bitgen
+prj_run Export -impl raw_colorbar -task Bitgen
+prj_run Export -impl raw_colorbar -task Bitgen
+rvl_project new
+rvl_trace add_sig  {w_pixclk}
+rvl_trace add_sig  {fv}
+rvl_trace add_sig  {lv}
+rvl_trace add_sig  {{pixdata[9:0]}}
+rvl_trace del_sig {w_pixclk}
+rvl_trace add_sig  {pixclk}
+rvl_trace trc_option SampleClk=w_pixclk
+rvl_trace trc_option BufferDepth=4096
+rvl_tu set -name TU1 -set_sig {w_fv }
+rvl_tu add -radix Bin 
+rvl_tu set -name TU2 -add_sig {w_lv }
+rvl_te add
+rvl_te set -expression TU1 TE1
+rvl_te set -expression TU2 TE2
+rvl_project save -overwrite /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+rvl_project save -overwrite /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+prj_src add -exclude "/home/andy/Downloads/tmp/raw_colorbar/test.rvl"
+prj_src enable "/home/andy/Downloads/tmp/raw_colorbar/test.rvl"
+rvl_project close -force
+prj_run Synthesis -impl raw_colorbar -task Synplify_Synthesis
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_project save "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+prj_src add -exclude "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+prj_src enable "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+pgr_program set -cable 
+pgr_program set -port FTUSB-0
+pgr_program set -port FTUSB-1
+pgr_project save "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+pgr_program run
+rva_project new -rva "untitled" -cable USB2 -rvl "/home/andy/Downloads/tmp/raw_colorbar/test.rvl" -dev "1. LCMXO3LF-9400C:0x612BE043" -port 1 -xcf ""
+prj_src add "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project run
+rva_te set -name TE2 -enable off
+rva_project run
+rva_project save "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project close
+rvl_project open /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+rvl_tu add -radix Bin 
+rvl_tu set -name TU3 -add_sig {w_pixdata:9 }
+rvl_tu set -name TU3 -val 1
+rvl_te add
+rvl_te set -expression TU3 TE3
+rvl_project save -overwrite /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+rvl_trace trc_option BufferDepth=8192
+rvl_project save -overwrite /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_project save "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+pgr_program run
+rva_project open "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project run
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+rva_project run
+rvl_trace trc_option BufferDepth=2048
+rvl_trace add_sig  {{u_raw_colorbar_gen/pix_rgb[23:0]}}
+rvl_project save -overwrite /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+rva_project close
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+rva_project open "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project run
+rva_project save "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rvl_project close
+rvl_project open /home/andy/Downloads/tmp/raw_colorbar/test.rvl
+rva_project close
+pgr_project save "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+rvl_project close -force
+pgr_project close
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_project open "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar.xcf"
+pgr_program run
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+prj_run Export -impl raw_colorbar -task Bitgen
+prj_run Export -impl raw_colorbar -task Bitgen
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+rva_project open "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project run
+rva_project save "/home/andy/Downloads/tmp/raw_colorbar/untitled.rva"
+rva_project close
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 4/22/2020 16:14:18

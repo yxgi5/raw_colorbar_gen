@@ -1,0 +1,1231 @@
+
+Loading design for application trce from file raw_colorbar_raw_colorbar.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-9400C
+Package:     CABGA484
+Performance: 6
+Loading device for application trce from file 'xo3c9400.nph' in environment: /opt/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.6.
+Performance Hardware Data Status:   Final          Version 37.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
+Wed Apr 22 13:43:46 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o raw_colorbar_raw_colorbar_pwc.twr -gui raw_colorbar_raw_colorbar.ncd raw_colorbar_raw_colorbar.prf 
+Design file:     raw_colorbar_raw_colorbar.ncd
+Preference file: raw_colorbar_raw_colorbar.prf
+Device,speed:    LCMXO3LF-9400C,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk24M" 24.180000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+            637 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 15.924ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[9]  (to pixclk_c +)
+
+   Delay:               8.943ns  (46.6% logic, 53.4% route), 12 logic levels.
+
+ Constraint Details:
+
+      8.943ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_15 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 15.924ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.130     R25C5C.FCI to     R25C5C.FCO u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.000     R25C5C.FCO to     R25C5D.FCI u_raw_colorbar_gen/un2_linecnt_cry_4
+FCITOFCO_D  ---     0.130     R25C5D.FCI to     R25C5D.FCO u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.000     R25C5D.FCO to     R25C6A.FCI u_raw_colorbar_gen/un2_linecnt_cry_6
+FCITOFCO_D  ---     0.130     R25C6A.FCI to     R25C6A.FCO u_raw_colorbar_gen/SLICE_2
+ROUTE         1     0.000     R25C6A.FCO to     R25C6B.FCI u_raw_colorbar_gen/un2_linecnt_cry_8
+FCITOF0_DE  ---     0.450     R25C6B.FCI to      R25C6B.F0 u_raw_colorbar_gen/SLICE_1
+ROUTE         1     0.759      R25C6B.F0 to      R25C7B.A0 u_raw_colorbar_gen/un2_linecnt_s_9_0_S0
+CTOF_DEL    ---     0.408      R25C7B.A0 to      R25C7B.F0 u_raw_colorbar_gen/SLICE_15
+ROUTE         1     0.000      R25C7B.F0 to     R25C7B.DI0 u_raw_colorbar_gen/un65_linecnt[9] (to pixclk_c)
+                  --------
+                    8.943   (46.6% logic, 53.4% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.095ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[9]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[9]  (to pixclk_c +)
+
+   Delay:               8.772ns  (47.5% logic, 52.5% route), 12 logic levels.
+
+ Constraint Details:
+
+      8.772ns physical path delay u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_15 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.095ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7B.CLK to      R25C7B.Q0 u_raw_colorbar_gen/SLICE_15 (from pixclk_c)
+ROUTE         4     0.876      R25C7B.Q0 to      R26C6B.C1 u_raw_colorbar_gen/linecnt[9]
+CTOF_DEL    ---     0.408      R26C6B.C1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.130     R25C5C.FCI to     R25C5C.FCO u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.000     R25C5C.FCO to     R25C5D.FCI u_raw_colorbar_gen/un2_linecnt_cry_4
+FCITOFCO_D  ---     0.130     R25C5D.FCI to     R25C5D.FCO u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.000     R25C5D.FCO to     R25C6A.FCI u_raw_colorbar_gen/un2_linecnt_cry_6
+FCITOFCO_D  ---     0.130     R25C6A.FCI to     R25C6A.FCO u_raw_colorbar_gen/SLICE_2
+ROUTE         1     0.000     R25C6A.FCO to     R25C6B.FCI u_raw_colorbar_gen/un2_linecnt_cry_8
+FCITOF0_DE  ---     0.450     R25C6B.FCI to      R25C6B.F0 u_raw_colorbar_gen/SLICE_1
+ROUTE         1     0.759      R25C6B.F0 to      R25C7B.A0 u_raw_colorbar_gen/un2_linecnt_s_9_0_S0
+CTOF_DEL    ---     0.408      R25C7B.A0 to      R25C7B.F0 u_raw_colorbar_gen/SLICE_15
+ROUTE         1     0.000      R25C7B.F0 to     R25C7B.DI0 u_raw_colorbar_gen/un65_linecnt[9] (to pixclk_c)
+                  --------
+                    8.772   (47.5% logic, 52.5% route), 12 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.269ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[4]  (to pixclk_c +)
+
+   Delay:               8.598ns  (44.4% logic, 55.6% route), 9 logic levels.
+
+ Constraint Details:
+
+      8.598ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_13 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.269ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOF1_DE  ---     0.495     R25C5C.FCI to      R25C5C.F1 u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.759      R25C5C.F1 to      R25C6D.A1 u_raw_colorbar_gen/un2_linecnt_cry_3_0_S1
+CTOF_DEL    ---     0.408      R25C6D.A1 to      R25C6D.F1 u_raw_colorbar_gen/SLICE_13
+ROUTE         1     0.000      R25C6D.F1 to     R25C6D.DI1 u_raw_colorbar_gen/un65_linecnt[4] (to pixclk_c)
+                  --------
+                    8.598   (44.4% logic, 55.6% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C6D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.289ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[8]  (to pixclk_c +)
+
+   Delay:               8.578ns  (47.6% logic, 52.4% route), 11 logic levels.
+
+ Constraint Details:
+
+      8.578ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_14 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.289ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.130     R25C5C.FCI to     R25C5C.FCO u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.000     R25C5C.FCO to     R25C5D.FCI u_raw_colorbar_gen/un2_linecnt_cry_4
+FCITOFCO_D  ---     0.130     R25C5D.FCI to     R25C5D.FCO u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.000     R25C5D.FCO to     R25C6A.FCI u_raw_colorbar_gen/un2_linecnt_cry_6
+FCITOF1_DE  ---     0.495     R25C6A.FCI to      R25C6A.F1 u_raw_colorbar_gen/SLICE_2
+ROUTE         1     0.479      R25C6A.F1 to      R25C7D.D1 u_raw_colorbar_gen/un2_linecnt_cry_7_0_S1
+CTOF_DEL    ---     0.408      R25C7D.D1 to      R25C7D.F1 u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000      R25C7D.F1 to     R25C7D.DI1 u_raw_colorbar_gen/un65_linecnt[8] (to pixclk_c)
+                  --------
+                    8.578   (47.6% logic, 52.4% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.398ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[1]  (to pixclk_c +)
+
+   Delay:               8.469ns  (43.0% logic, 57.0% route), 8 logic levels.
+
+ Constraint Details:
+
+      8.469ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_12 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.398ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOF0_DE  ---     0.450     R25C5B.FCI to      R25C5B.F0 u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.805      R25C5B.F0 to      R25C6C.B1 u_raw_colorbar_gen/un2_linecnt_cry_1_0_S0
+CTOF_DEL    ---     0.408      R25C6C.B1 to      R25C6C.F1 u_raw_colorbar_gen/SLICE_12
+ROUTE         1     0.000      R25C6C.F1 to     R25C6C.DI1 u_raw_colorbar_gen/un65_linecnt[1] (to pixclk_c)
+                  --------
+                    8.469   (43.0% logic, 57.0% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C6C.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.440ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[9]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[4]  (to pixclk_c +)
+
+   Delay:               8.427ns  (45.3% logic, 54.7% route), 9 logic levels.
+
+ Constraint Details:
+
+      8.427ns physical path delay u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_13 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.440ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7B.CLK to      R25C7B.Q0 u_raw_colorbar_gen/SLICE_15 (from pixclk_c)
+ROUTE         4     0.876      R25C7B.Q0 to      R26C6B.C1 u_raw_colorbar_gen/linecnt[9]
+CTOF_DEL    ---     0.408      R26C6B.C1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOF1_DE  ---     0.495     R25C5C.FCI to      R25C5C.F1 u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.759      R25C5C.F1 to      R25C6D.A1 u_raw_colorbar_gen/un2_linecnt_cry_3_0_S1
+CTOF_DEL    ---     0.408      R25C6D.A1 to      R25C6D.F1 u_raw_colorbar_gen/SLICE_13
+ROUTE         1     0.000      R25C6D.F1 to     R25C6D.DI1 u_raw_colorbar_gen/un65_linecnt[4] (to pixclk_c)
+                  --------
+                    8.427   (45.3% logic, 54.7% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C6D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.442ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[5]  (to pixclk_c +)
+
+   Delay:               8.425ns  (46.3% logic, 53.7% route), 10 logic levels.
+
+ Constraint Details:
+
+      8.425ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_14 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.442ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.130     R25C5C.FCI to     R25C5C.FCO u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.000     R25C5C.FCO to     R25C5D.FCI u_raw_colorbar_gen/un2_linecnt_cry_4
+FCITOF0_DE  ---     0.450     R25C5D.FCI to      R25C5D.F0 u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.501      R25C5D.F0 to      R25C7D.D0 u_raw_colorbar_gen/un2_linecnt_cry_5_0_S0
+CTOF_DEL    ---     0.408      R25C7D.D0 to      R25C7D.F0 u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000      R25C7D.F0 to     R25C7D.DI0 u_raw_colorbar_gen/un65_linecnt[5] (to pixclk_c)
+                  --------
+                    8.425   (46.3% logic, 53.7% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.460ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[9]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[8]  (to pixclk_c +)
+
+   Delay:               8.407ns  (48.5% logic, 51.5% route), 11 logic levels.
+
+ Constraint Details:
+
+      8.407ns physical path delay u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_14 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.460ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7B.CLK to      R25C7B.Q0 u_raw_colorbar_gen/SLICE_15 (from pixclk_c)
+ROUTE         4     0.876      R25C7B.Q0 to      R26C6B.C1 u_raw_colorbar_gen/linecnt[9]
+CTOF_DEL    ---     0.408      R26C6B.C1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOFCO_D  ---     0.130     R25C5C.FCI to     R25C5C.FCO u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.000     R25C5C.FCO to     R25C5D.FCI u_raw_colorbar_gen/un2_linecnt_cry_4
+FCITOFCO_D  ---     0.130     R25C5D.FCI to     R25C5D.FCO u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.000     R25C5D.FCO to     R25C6A.FCI u_raw_colorbar_gen/un2_linecnt_cry_6
+FCITOF1_DE  ---     0.495     R25C6A.FCI to      R25C6A.F1 u_raw_colorbar_gen/SLICE_2
+ROUTE         1     0.479      R25C6A.F1 to      R25C7D.D1 u_raw_colorbar_gen/un2_linecnt_cry_7_0_S1
+CTOF_DEL    ---     0.408      R25C7D.D1 to      R25C7D.F1 u_raw_colorbar_gen/SLICE_14
+ROUTE         1     0.000      R25C7D.F1 to     R25C7D.DI1 u_raw_colorbar_gen/un65_linecnt[8] (to pixclk_c)
+                  --------
+                    8.407   (48.5% logic, 51.5% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.569ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[9]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[1]  (to pixclk_c +)
+
+   Delay:               8.298ns  (43.9% logic, 56.1% route), 8 logic levels.
+
+ Constraint Details:
+
+      8.298ns physical path delay u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_12 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.569ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_15 to u_raw_colorbar_gen/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7B.CLK to      R25C7B.Q0 u_raw_colorbar_gen/SLICE_15 (from pixclk_c)
+ROUTE         4     0.876      R25C7B.Q0 to      R26C6B.C1 u_raw_colorbar_gen/linecnt[9]
+CTOF_DEL    ---     0.408      R26C6B.C1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOF0_DE  ---     0.450     R25C5B.FCI to      R25C5B.F0 u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.805      R25C5B.F0 to      R25C6C.B1 u_raw_colorbar_gen/un2_linecnt_cry_1_0_S0
+CTOF_DEL    ---     0.408      R25C6C.B1 to      R25C6C.F1 u_raw_colorbar_gen/SLICE_12
+ROUTE         1     0.000      R25C6C.F1 to     R25C6C.DI1 u_raw_colorbar_gen/un65_linecnt[1] (to pixclk_c)
+                  --------
+                    8.298   (43.9% logic, 56.1% route), 8 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7B.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C6C.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 16.594ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[3]  (to pixclk_c +)
+
+   Delay:               8.273ns  (45.6% logic, 54.4% route), 9 logic levels.
+
+ Constraint Details:
+
+      8.273ns physical path delay u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_13 meets
+     25.000ns delay constraint less
+      0.000ns skew and
+      0.133ns DIN_SET requirement (totaling 24.867ns) by 16.594ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_14 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367     R25C7D.CLK to      R25C7D.Q1 u_raw_colorbar_gen/SLICE_14 (from pixclk_c)
+ROUTE         4     1.047      R25C7D.Q1 to      R26C6B.A1 u_raw_colorbar_gen/linecnt[8]
+CTOF_DEL    ---     0.408      R26C6B.A1 to      R26C6B.F1 u_raw_colorbar_gen/SLICE_22
+ROUTE         4     0.514      R26C6B.F1 to      R26C5D.D1 u_raw_colorbar_gen/N_23
+CTOF_DEL    ---     0.408      R26C5D.D1 to      R26C5D.F1 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     0.351      R26C5D.F1 to      R26C5D.C0 u_raw_colorbar_gen/un38_linecnt_i_a4_2
+CTOF_DEL    ---     0.408      R26C5D.C0 to      R26C5D.F0 u_raw_colorbar_gen/SLICE_26
+ROUTE         1     1.021      R26C5D.F0 to      R25C7A.A1 u_raw_colorbar_gen/N_40
+CTOF_DEL    ---     0.408      R25C7A.A1 to      R25C7A.F1 u_raw_colorbar_gen/SLICE_20
+ROUTE         1     1.087      R25C7A.F1 to      R25C5A.A0 u_raw_colorbar_gen/N_10_i
+C0TOFCO_DE  ---     0.787      R25C5A.A0 to     R25C5A.FCO u_raw_colorbar_gen/SLICE_6
+ROUTE         1     0.000     R25C5A.FCO to     R25C5B.FCI u_raw_colorbar_gen/un2_linecnt_cry_0
+FCITOFCO_D  ---     0.130     R25C5B.FCI to     R25C5B.FCO u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000     R25C5B.FCO to     R25C5C.FCI u_raw_colorbar_gen/un2_linecnt_cry_2
+FCITOF0_DE  ---     0.450     R25C5C.FCI to      R25C5C.F0 u_raw_colorbar_gen/SLICE_4
+ROUTE         1     0.479      R25C5C.F0 to      R25C6D.D0 u_raw_colorbar_gen/un2_linecnt_cry_3_0_S0
+CTOF_DEL    ---     0.408      R25C6D.D0 to      R25C6D.F0 u_raw_colorbar_gen/SLICE_13
+ROUTE         1     0.000      R25C6D.F0 to     R25C6D.DI0 u_raw_colorbar_gen/un65_linecnt[3] (to pixclk_c)
+                  --------
+                    8.273   (45.6% logic, 54.4% route), 9 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C7D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_13:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     1.564     LPLL.CLKOP to     R25C6D.CLK pixclk_c
+                  --------
+                    1.564   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  110.181MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk24M" 24.180000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "pixclk_c" 40.000000 MHz  |             |             |
+;                                       |   40.000 MHz|  110.181 MHz|  12  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: pixclk_c   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 17
+   Covered under: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+
+Clock Domain: clk24M   Source: u_OSCH.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 637 paths, 2 nets, and 222 connections (98.67% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.0.396.4
+Wed Apr 22 13:43:46 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o raw_colorbar_raw_colorbar_pwc.twr -gui raw_colorbar_raw_colorbar.ncd raw_colorbar_raw_colorbar.prf 
+Design file:     raw_colorbar_raw_colorbar.ncd
+Preference file: raw_colorbar_raw_colorbar.prf
+Device,speed:    LCMXO3LF-9400C,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk24M" 24.180000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+            637 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[2]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[2]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_5 to u_raw_colorbar_gen/SLICE_5 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_5 to u_raw_colorbar_gen/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R25C5B.CLK to      R25C5B.Q1 u_raw_colorbar_gen/SLICE_5 (from pixclk_c)
+ROUTE         4     0.132      R25C5B.Q1 to      R25C5B.A1 u_raw_colorbar_gen/linecnt[2]
+CTOF_DEL    ---     0.101      R25C5B.A1 to      R25C5B.F1 u_raw_colorbar_gen/SLICE_5
+ROUTE         1     0.000      R25C5B.F1 to     R25C5B.DI1 u_raw_colorbar_gen/un2_linecnt[2] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C5B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C5B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[6]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[6]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_9 to u_raw_colorbar_gen/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_9 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C6D.CLK to      R24C6D.Q1 u_raw_colorbar_gen/SLICE_9 (from pixclk_c)
+ROUTE         3     0.132      R24C6D.Q1 to      R24C6D.A1 u_raw_colorbar_gen/pixcnt[6]
+CTOF_DEL    ---     0.101      R24C6D.A1 to      R24C6D.F1 u_raw_colorbar_gen/SLICE_9
+ROUTE         1     0.000      R24C6D.F1 to     R24C6D.DI1 u_raw_colorbar_gen/un7_pixcnt[6] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[1]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[1]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_11 to u_raw_colorbar_gen/SLICE_11 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_11 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C6B.CLK to      R24C6B.Q0 u_raw_colorbar_gen/SLICE_11 (from pixclk_c)
+ROUTE         3     0.132      R24C6B.Q0 to      R24C6B.A0 u_raw_colorbar_gen/pixcnt[1]
+CTOF_DEL    ---     0.101      R24C6B.A0 to      R24C6B.F0 u_raw_colorbar_gen/SLICE_11
+ROUTE         1     0.000      R24C6B.F0 to     R24C6B.DI0 u_raw_colorbar_gen/un7_pixcnt[1] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[7]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[7]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_2 to u_raw_colorbar_gen/SLICE_2 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_2 to u_raw_colorbar_gen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R25C6A.CLK to      R25C6A.Q0 u_raw_colorbar_gen/SLICE_2 (from pixclk_c)
+ROUTE         4     0.132      R25C6A.Q0 to      R25C6A.A0 u_raw_colorbar_gen/linecnt[7]
+CTOF_DEL    ---     0.101      R25C6A.A0 to      R25C6A.F0 u_raw_colorbar_gen/SLICE_2
+ROUTE         1     0.000      R25C6A.F0 to     R25C6A.DI0 u_raw_colorbar_gen/un2_linecnt[7] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C6A.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C6A.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[8]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[8]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_8 to u_raw_colorbar_gen/SLICE_8 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_8 to u_raw_colorbar_gen/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C7A.CLK to      R24C7A.Q1 u_raw_colorbar_gen/SLICE_8 (from pixclk_c)
+ROUTE         4     0.132      R24C7A.Q1 to      R24C7A.A1 u_raw_colorbar_gen/pixcnt[8]
+CTOF_DEL    ---     0.101      R24C7A.A1 to      R24C7A.F1 u_raw_colorbar_gen/SLICE_8
+ROUTE         1     0.000      R24C7A.F1 to     R24C7A.DI1 u_raw_colorbar_gen/un7_pixcnt[8] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C7A.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_8:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C7A.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[5]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[5]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_9 to u_raw_colorbar_gen/SLICE_9 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_9 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C6D.CLK to      R24C6D.Q0 u_raw_colorbar_gen/SLICE_9 (from pixclk_c)
+ROUTE         3     0.132      R24C6D.Q0 to      R24C6D.A0 u_raw_colorbar_gen/pixcnt[5]
+CTOF_DEL    ---     0.101      R24C6D.A0 to      R24C6D.F0 u_raw_colorbar_gen/SLICE_9
+ROUTE         1     0.000      R24C6D.F0 to     R24C6D.DI0 u_raw_colorbar_gen/un7_pixcnt[5] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[2]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[2]  (to pixclk_c +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_raw_colorbar_gen/SLICE_11 to u_raw_colorbar_gen/SLICE_11 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_11 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C6B.CLK to      R24C6B.Q1 u_raw_colorbar_gen/SLICE_11 (from pixclk_c)
+ROUTE         3     0.132      R24C6B.Q1 to      R24C6B.A1 u_raw_colorbar_gen/pixcnt[2]
+CTOF_DEL    ---     0.101      R24C6B.A1 to      R24C6B.F1 u_raw_colorbar_gen/SLICE_11
+ROUTE         1     0.000      R24C6B.F1 to     R24C6B.DI1 u_raw_colorbar_gen/un7_pixcnt[2] (to pixclk_c)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C6B.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.380ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/linecnt[6]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/linecnt[6]  (to pixclk_c +)
+
+   Delay:               0.367ns  (63.8% logic, 36.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.367ns physical path delay u_raw_colorbar_gen/SLICE_3 to u_raw_colorbar_gen/SLICE_3 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.380ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_3 to u_raw_colorbar_gen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R25C5D.CLK to      R25C5D.Q1 u_raw_colorbar_gen/SLICE_3 (from pixclk_c)
+ROUTE         4     0.133      R25C5D.Q1 to      R25C5D.A1 u_raw_colorbar_gen/linecnt[6]
+CTOF_DEL    ---     0.101      R25C5D.A1 to      R25C5D.F1 u_raw_colorbar_gen/SLICE_3
+ROUTE         1     0.000      R25C5D.F1 to     R25C5D.DI1 u_raw_colorbar_gen/un2_linecnt[6] (to pixclk_c)
+                  --------
+                    0.367   (63.8% logic, 36.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C5D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R25C5D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.381ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[0]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[0]  (to pixclk_c +)
+
+   Delay:               0.368ns  (63.6% logic, 36.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.368ns physical path delay u_raw_colorbar_gen/SLICE_16 to u_raw_colorbar_gen/SLICE_16 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.381ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_16 to u_raw_colorbar_gen/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R23C6D.CLK to      R23C6D.Q0 u_raw_colorbar_gen/SLICE_16 (from pixclk_c)
+ROUTE         4     0.134      R23C6D.Q0 to      R23C6D.A0 u_raw_colorbar_gen/pixcnt[0]
+CTOF_DEL    ---     0.101      R23C6D.A0 to      R23C6D.F0 u_raw_colorbar_gen/SLICE_16
+ROUTE         1     0.000      R23C6D.F0 to     R23C6D.DI0 u_raw_colorbar_gen/pixcnt_i[0] (to pixclk_c)
+                  --------
+                    0.368   (63.6% logic, 36.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R23C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R23C6D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.381ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              u_raw_colorbar_gen/pixcnt[10]  (from pixclk_c +)
+   Destination:    FF         Data in        u_raw_colorbar_gen/pixcnt[10]  (to pixclk_c +)
+
+   Delay:               0.368ns  (63.6% logic, 36.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.368ns physical path delay u_raw_colorbar_gen/SLICE_18 to u_raw_colorbar_gen/SLICE_18 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.381ns
+
+ Physical Path Details:
+
+      Data path u_raw_colorbar_gen/SLICE_18 to u_raw_colorbar_gen/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R24C7D.CLK to      R24C7D.Q1 u_raw_colorbar_gen/SLICE_18 (from pixclk_c)
+ROUTE        10     0.134      R24C7D.Q1 to      R24C7D.A1 u_raw_colorbar_gen/pixcnt[10]
+CTOF_DEL    ---     0.101      R24C7D.A1 to      R24C7D.F1 u_raw_colorbar_gen/SLICE_18
+ROUTE         1     0.000      R24C7D.F1 to     R24C7D.DI1 u_raw_colorbar_gen/pixcnt_RNO[10] (to pixclk_c)
+                  --------
+                    0.368   (63.6% logic, 36.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C7D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path u_pll_sensor_clk/PLLInst_0 to u_raw_colorbar_gen/SLICE_18:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        17     0.804     LPLL.CLKOP to     R24C7D.CLK pixclk_c
+                  --------
+                    0.804   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk24M" 24.180000 MHz ;  |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "pixclk_c" 40.000000 MHz  |             |             |
+;                                       |     0.000 ns|     0.379 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: pixclk_c   Source: u_pll_sensor_clk/PLLInst_0.CLKOP   Loads: 17
+   Covered under: FREQUENCY NET "pixclk_c" 40.000000 MHz ;
+
+Clock Domain: clk24M   Source: u_OSCH.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 637 paths, 2 nets, and 222 connections (98.67% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

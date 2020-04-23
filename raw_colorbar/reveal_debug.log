@@ -1,0 +1,73 @@
+Logfile for Reveal Analyzer
+Version: Diamond 3.11.0.396.4
+Platform: Linux 64bit
+Filename: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_debug.log
+First created: Wed Apr 22 16:13:17 2020
+[16:13:19] runProject on device [1. LCMXO3LF-9400C] using /home/andy/Downloads/tmp/raw_colorbar/untitled.rva [test.rvl]
+[16:13:19] Connecting cableserver to run Reveal debugger....
+[16:13:24] @Connect
+[16:13:24] @SetSharableApplications,2,Reveal,Mico
+[16:13:32] @SetCablePort,USB2,FTUSB-1,8,0,0,1,1,0,0,0,1
+[16:13:32] @LockCable
+[16:13:32] @GetServerStatus
+[16:13:32] @Read
+[16:13:32] @SetTargetDevice,0
+[16:13:32] Connecting core0....
+[16:13:32] @ShiftIR,8,0,ER1
+[16:13:32] @ShiftDR,21,0,data (select core0)
+[16:13:32] @ShiftIR,8,0,ER2
+[16:13:32] Configuring core0....
+[16:13:32] @JumpState,RUN_TEST_IDLE
+[16:13:32] @JumpState,RUN_TEST_IDLE
+[16:13:32] @JumpState,RUN_TEST_IDLE
+[16:13:32] @ShiftIR,8,0,NOP
+[16:13:32] @JumpState,RUN_TEST_IDLE
+[16:13:32] @ShiftIR,8,0,ER2
+[16:13:32] @Set Odd Parity readback
+[16:13:32] @Set Odd Parity
+[16:13:32] @Set LA Start/Stop readback
+[16:13:32] @Set LA Start/Stop 
+[16:13:32] #Reveal IP Version = 1_6_042617
+[16:13:32] @Get Pattern
+[16:13:32] #pattern readout = 0
+[16:13:32] #pattern expected = A5A5
+[16:13:32] ERROR: core0 incorrect pattern readout. <a href='file:////opt/lscc/diamond/3.11_x64/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (1) to (6)</a>.
+[16:13:33] @UnlockCable
+[16:13:33] @ReleaseCablePort
+[16:13:33] @Disconnect
+[16:13:35] runProject on device [1. LCMXO3LF-9400C] using /home/andy/Downloads/tmp/raw_colorbar/untitled.rva [test.rvl]
+[16:13:35] Connecting cableserver to run Reveal debugger....
+[16:13:35] @Connect
+[16:13:35] @SetSharableApplications,2,Reveal,Mico
+[16:13:43] @SetCablePort,USB2,FTUSB-1,8,0,0,1,1,0,0,0,1
+[16:13:43] @LockCable
+[16:13:43] @GetServerStatus
+[16:13:43] @Read
+[16:13:43] @SetTargetDevice,0
+[16:13:43] Connecting core0....
+[16:13:43] @ShiftIR,8,0,ER1
+[16:13:43] @ShiftDR,21,0,data (select core0)
+[16:13:43] @ShiftIR,8,0,ER2
+[16:13:43] Configuring core0....
+[16:13:43] @JumpState,RUN_TEST_IDLE
+[16:13:43] @JumpState,RUN_TEST_IDLE
+[16:13:43] @JumpState,RUN_TEST_IDLE
+[16:13:43] @ShiftIR,8,0,NOP
+[16:13:43] @JumpState,RUN_TEST_IDLE
+[16:13:43] @ShiftIR,8,0,ER2
+[16:13:43] @Set Odd Parity readback
+[16:13:43] @Set Odd Parity
+[16:13:43] @Set LA Start/Stop readback
+[16:13:43] @Set LA Start/Stop 
+[16:13:43] #Reveal IP Version = 1_6_042617
+[16:13:43] @Get Pattern
+[16:13:43] #pattern readout = 0
+[16:13:43] #pattern expected = A5A5
+[16:13:43] ERROR: core0 incorrect pattern readout. <a href='file:////opt/lscc/diamond/3.11_x64/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (1) to (6)</a>.
+[16:13:44] @UnlockCable
+[16:13:44] @ReleaseCablePort
+[16:13:44] @Disconnect
+[16:13:46] @ReleaseCablePort
+[16:13:46] @Disconnect
+[16:13:46] All messages logged in file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_debug.log
+Last closed: Wed Apr 22 16:14:04 2020

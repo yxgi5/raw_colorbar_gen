@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synlog/raw_colorbar_raw_colorbar_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>reveal_coretop|jtck_inferred_clock[0]</data>
+<data>100.0 MHz</data>
+<data>102.8 MHz</data>
+<data>0.275</data>
+</row>
+<row>
+<data>top|w_pixclk</data>
+<data>100.0 MHz</data>
+<data>42.1 MHz</data>
+<data>-13.726</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>202.7 MHz</data>
+<data>5.067</data>
+</row>
+</report_table>

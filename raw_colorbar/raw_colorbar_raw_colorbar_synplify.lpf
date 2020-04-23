@@ -1,0 +1,24 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat2018q2p1, Build 055R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "top_reveal_coretop_instance/jtck[0]" 100.0 MHz;
+#FREQUENCY NET "w_pixclk" 100.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "top_reveal_coretop_instance/jtck[0]";
+#BLOCK PATH FROM CLKNET "top_reveal_coretop_instance/jtck[0]" TO CLKNET "w_pixclk";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.
