@@ -1,4 +1,4 @@
-<Project ModBy="Analyzer" Name="/home/andy/Downloads/tmp/raw_colorbar/test.rvs" Date="2020-04-22">
+<Project ModBy="Analyzer" Name="/home/andy/Downloads/tmp/raw_colorbar_gen/test.rvs" Date="2020-04-24">
  <Core Name="top_LA0">
   <Setting>
    <Capture SamplesPerTrig="2048" NumTrigsCap="1"/>

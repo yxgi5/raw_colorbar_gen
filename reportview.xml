@@ -3,7 +3,7 @@
 <ReportView version="2.0">
     <Implement name="raw_colorbar">
         <ToolReport id="tooldec" path="" status="0"/>
-        <ToolReport id="toolhle_genhierarchy" path="/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolhle_genhierarchy" path="/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/hdla_gen_hierarchy.html" status="1"/>
         <ToolReport id="toolpio" path="" status="2"/>
         <ToolReport id="toolsso" path="" status="2"/>
     </Implement>

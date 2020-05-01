@@ -12,7 +12,7 @@ Hostname: debian-dell
 
 Implementation : raw_colorbar
 
-# Written on Thu Apr 23 09:47:08 2020
+# Written on Fri Apr 24 15:44:09 2020
 
 ##### DESIGN INFO #######################################################
 
@@ -34,18 +34,10 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting                                  Ending                                    |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                    System                                    |     10.000           |     No paths         |     No paths         |     No paths                         
-System                                    reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     10.000           |     No paths                         
-System                                    top|w_pixclk                              |     10.000           |     No paths         |     No paths         |     No paths                         
-reveal_coretop|jtck_inferred_clock[0]     System                                    |     No paths         |     No paths         |     No paths         |     10.000                           
-reveal_coretop|jtck_inferred_clock[0]     reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     10.000           |     No paths         |     No paths                         
-reveal_coretop|jtck_inferred_clock[0]     top|w_pixclk                              |     No paths         |     No paths         |     No paths         |     Diff grp                         
-top|w_pixclk                              System                                    |     10.000           |     No paths         |     No paths         |     No paths                         
-top|w_pixclk                              reveal_coretop|jtck_inferred_clock[0]     |     No paths         |     No paths         |     Diff grp         |     No paths                         
-top|w_pixclk                              top|w_pixclk                              |     10.000           |     No paths         |     No paths         |     No paths                         
-===============================================================================================================================================================================================
+Starting                                Ending                                  |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll_sensor_clk|CLKOP_inferred_clock     pll_sensor_clk|CLKOP_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+===========================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -53,6 +45,7 @@ top|w_pixclk                              top|w_pixclk                          
 Unconstrained Start/End Points
 ******************************
 
+p:clk_in
 p:fv
 p:lv
 p:pixclk

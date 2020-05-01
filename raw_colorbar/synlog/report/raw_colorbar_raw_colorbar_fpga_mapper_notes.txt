@@ -3,20 +3,20 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MF284 |Setting synthesis effort to medium for the design
-@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":82:11:82:14|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
-@N: MF237 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":1310:52:1310:68|Generating a type rem remainder 
-@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":917:4:917:9|Found counter in view:work.raw_colorbar_gen_uniq_1(verilog) instance color_cntr[11:0] 
-@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Found counter in view:work.raw_colorbar_gen_uniq_1(verilog) instance rstn_cnt[7:0] 
+@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar_gen/top.v":11:8:11:11|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: MF237 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":754:19:754:33|Generating a type rem remainder 
+@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":116:0:116:5|Found counter in view:work.raw_colorbar_gen_Z1(verilog) instance color_cntr[11:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Found counter in view:work.raw_colorbar_gen_Z1(verilog) instance rstn_cnt[7:0] 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":82:11:82:14|Tristate driver test_obuft.un1[0] (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[6] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[5] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[4] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[3] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[2] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[1] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[0] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar.edi
+@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar_gen/top.v":11:8:11:11|Tristate driver test_obuft.un1[0] (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[0] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[1] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[2] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[3] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[4] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[5] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[6] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

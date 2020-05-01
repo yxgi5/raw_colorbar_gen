@@ -2,14 +2,14 @@
 <!-- 
   Synopsys, Inc.
   Version N-2018.03L-SP1-1
-  Project file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/syntmp/run_option.xml
-  Written on Thu Apr 23 09:47:05 2020
+  Project file /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/syntmp/run_option.xml
+  Written on Fri Apr 24 15:44:07 2020
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">proj_1</option>
-     <option name="device_name" display_name="Device Name">raw_colorbar: Lattice MachXO3LF : LCMXO3LF_9400C</option>
+     <option name="device_name" display_name="Device Name">raw_colorbar: Lattice ECP5UM : LFE5UM_85F</option>
      <option name="impl_name" display_name="Implementation Name">raw_colorbar</option>
      <option name="top_module" display_name="Top Module">top</option>
      <option name="pipe" display_name="Pipelining">1</option>

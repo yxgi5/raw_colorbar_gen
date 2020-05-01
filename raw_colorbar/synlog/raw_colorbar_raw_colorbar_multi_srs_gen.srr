@@ -10,17 +10,17 @@ Install: /opt/lscc/diamond/3.11_x64/synpbase
 OS: Debian GNU/Linux 8 (jessie)
 Hostname: debian-dell
 
-Database state : /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synwork/|raw_colorbar
+Database state : /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synwork/|raw_colorbar
 Synopsys Synopsys Netlist Linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:26:38
 
 @N|Running in 64-bit mode
-File /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synwork/raw_colorbar_raw_colorbar_comp.srs changed - recompiling
+File /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synwork/raw_colorbar_raw_colorbar_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Apr 23 09:47:07 2020
+# Fri Apr 24 15:44:08 2020
 
 ###########################################################]

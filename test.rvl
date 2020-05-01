@@ -1,7 +1,7 @@
-<Project ModBy="Inserter" SigType="0" Name="/home/andy/Downloads/tmp/raw_colorbar/test.rvl" Date="2020-04-22">
+<Project ModBy="Inserter" SigType="0" Name="/home/andy/Downloads/tmp/raw_colorbar_gen/test.rvl" Date="2020-04-24">
     <IP Version="1_6_042617"/>
-    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="MachXO3LF" DesignName="raw_colorbar"/>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="288152936" Name="top_LA0" ID="0">
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="ECP5UM" DesignName="raw_colorbar"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="288418994" Name="top_LA0" ID="0">
         <Setting>
             <Clock SampleClk="w_pixclk" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
             <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>

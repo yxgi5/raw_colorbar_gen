@@ -3,8 +3,7 @@
 #
 
 # Period Constraints 
-#FREQUENCY NET "top_reveal_coretop_instance/jtck[0]" 100.0 MHz;
-#FREQUENCY NET "w_pixclk" 100.0 MHz;
+#FREQUENCY NET "u_pll_sensor_clk/w_pixclk" 100.0 MHz;
 
 
 # Output Constraints 
@@ -16,8 +15,6 @@
 
 
 # Block Path Constraints 
-#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "top_reveal_coretop_instance/jtck[0]";
-#BLOCK PATH FROM CLKNET "top_reveal_coretop_instance/jtck[0]" TO CLKNET "w_pixclk";
 
 BLOCK ASYNCPATHS;
 

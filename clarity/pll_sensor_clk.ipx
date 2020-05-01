@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="pll_sensor_clk" module="pll_sensor_clk" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2020 04 22 11:31:36.840" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
-  <Package>
-		<File name="pll_sensor_clk.lpc" type="lpc" modified="2020 04 22 11:31:35.000"/>
-		<File name="pll_sensor_clk.v" type="top_level_verilog" modified="2020 04 22 11:31:35.000"/>
-		<File name="pll_sensor_clk_tmpl.v" type="template_verilog" modified="2020 04 22 11:31:35.000"/>
-  </Package>
-</DiamondModule>

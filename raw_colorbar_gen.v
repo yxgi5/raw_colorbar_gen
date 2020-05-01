@@ -10,7 +10,7 @@ module raw_colorbar_gen #(
     parameter V_FRONT_PORCH =    'd4     ,
     parameter V_SYNCH       =    'd5     ,
 	parameter bayer_pattern =     3      ,      // 0=RGGB, 1=GRBG, 2=GBRG, 3=BGGR
-    parameter mode          =     0             //
+    parameter mode          =     0             // reserved for hbar, vbar, etc
 )
 ( 
     input                         rstn       , 
@@ -128,6 +128,7 @@ else
 
 reg [23:0] pix_rgb;
 reg [word_width-1:0]     raw_data;
+
 always @(posedge clk or negedge rstn_cnt[7])
 begin
 	if(!rstn_cnt[7])
@@ -247,38 +248,38 @@ begin
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // Gr
+				raw_data <= {(word_width) {1'b1}}; // Gr of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // Gr
+				raw_data <= {(word_width) {1'b1}}; // Gr of BGGR
 			end
 		end
 		else
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b1}}; // Gb
+				raw_data <= {(word_width) {1'b1}}; // Gb of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // Gb
+				raw_data <= {(word_width) {1'b1}}; // Gb of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 		end
 	end
@@ -298,38 +299,38 @@ begin
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b1}}; // R
+				raw_data <= {(word_width) {1'b1}}; // R of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // R
+				raw_data <= {(word_width) {1'b1}}; // R of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 		end
 		else
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 		end
 	end
@@ -349,38 +350,38 @@ begin
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 		end
 		else
 		begin
             if((pixcnt%4)==0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 		    end
 			else if((pixcnt%4)==1)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // B
+				raw_data <= {(word_width) {1'b1}}; // B of BGGR
 			end
 			else if((pixcnt%4)==2)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 			end
 			else if((pixcnt%4)==3)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // B
+				raw_data <= {(word_width) {1'b1}}; // B of BGGR
 			end
 		end
 	end
@@ -402,22 +403,22 @@ begin
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b1}}; // R
+				raw_data <= {(word_width) {1'b1}}; // R of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 		end
 		else if(linecnt[0]==1'b1)
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 		end
 	end
@@ -436,22 +437,22 @@ begin
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // Gr
+				raw_data <= {(word_width) {1'b1}}; // Gr of BGGR
 			end
 		end
 		else if(linecnt[0]==1'b1)
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b1}}; // Gb
+				raw_data <= {(word_width) {1'b1}}; // Gb of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // B
+				raw_data <= {(word_width) {1'b0}}; // B of BGGR
 			end
 		end
 	end
@@ -471,30 +472,30 @@ begin
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // R
+				raw_data <= {(word_width) {1'b0}}; // R of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b0}}; // Gr
+				raw_data <= {(word_width) {1'b0}}; // Gr of BGGR
 			end
 		end
 		else if(linecnt[0]==1'b1)
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= {(word_width) {1'b0}}; // Gb
+				raw_data <= {(word_width) {1'b0}}; // Gb of BGGR
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= {(word_width) {1'b1}}; // B
+				raw_data <= {(word_width) {1'b1}}; // B of BGGR
 			end
 		end
 	end
 end
 */
 
-// pclk shift 225 degree to hi3516dv300 as BGGR bayer source
-// R | G | B | R | G | B ...
+/*
+// pclk shift 180/227 degree
 always @(posedge clk or negedge rstn_cnt[7])
 begin
 	if(!rstn_cnt[7])
@@ -507,27 +508,299 @@ begin
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				raw_data <= {(word_width) {1'b1}}; // Gb of GRBG
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				raw_data <= {(word_width) {1'b0}}; // B of GRBG
 			end
 		end
 		else if(linecnt[0]==1'b1)
 		begin
             if(pixcnt[0]==1'b0)
 			begin
-				raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				raw_data <= {(word_width) {1'b0}}; // R of GRBG
 		    end
 			else if(pixcnt[0]==1'b1)
 		    begin
-				raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				raw_data <= {(word_width) {1'b1}}; // Gr of GRBG
 			end
 		end
 	end
 end
+*/
 
+/*
+// pclk shift 180/227 degree
+always @(posedge clk or negedge rstn_cnt[7])
+begin
+	if(!rstn_cnt[7])
+	begin
+		raw_data  <= 0;
+	end
+	else
+	begin
+		if(linecnt[0]==1'b0)
+		begin
+            if(pixcnt[0]==1'b0)
+			begin
+				raw_data <= {(word_width) {1'b0}}; // Gr of GBRG
+		    end
+			else if(pixcnt[0]==1'b1)
+		    begin
+				raw_data <= {(word_width) {1'b0}}; // R of GBRG
+			end
+		end
+		else if(linecnt[0]==1'b1)
+		begin
+            if(pixcnt[0]==1'b0)
+			begin
+				raw_data <= {(word_width) {1'b1}}; // B of GBRG
+		    end
+			else if(pixcnt[0]==1'b1)
+		    begin
+				raw_data <= {(word_width) {1'b0}}; // Gb of GBRG
+			end
+		end
+	end
+end
+*/
+
+
+// pclk shift 225 degree to hi3516dv300 as BGGR bayer source
+// R | G | B | R | G | B ...
+/*
+always @(posedge clk or negedge rstn_cnt[7])
+begin
+	if(!rstn_cnt[7])
+	begin
+		raw_data  <= 0;
+	end
+	else
+    begin
+		case (bayer_pattern)
+		0:
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		1:
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		2:
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		3:
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+			end
+		end
+		default:
+		begin
+			raw_data <= {(word_width) {1'b1}};
+	    end
+		endcase
+	end
+end
+*/
+always @(posedge clk or negedge rstn_cnt[7])
+begin
+	if(!rstn_cnt[7])
+	begin
+		raw_data  <= 0;
+	end
+	else
+    begin
+		if (bayer_pattern == 0)
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		else if (bayer_pattern == 1)
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		else if (bayer_pattern == 2)
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+		end
+		else if (bayer_pattern == 3)
+		begin
+			if(linecnt[0]==1'b0)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b1}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+			end
+			else if(linecnt[0]==1'b1)
+			begin
+				if(pixcnt[0]==1'b0)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b1}} : {(word_width) {1'b0}};
+				end
+				else if(pixcnt[0]==1'b1)
+				begin
+					raw_data <= ((color_cntr%480)<160)? {(word_width) {1'b0}} : ((color_cntr%480)<320) ? {(word_width) {1'b0}} : {(word_width) {1'b1}};
+				end
+			end
+		end
+		else
+		begin
+			raw_data <= {(word_width) {1'b1}};
+	    end
+	end
+end
 assign data = raw_data;
 
 endmodule

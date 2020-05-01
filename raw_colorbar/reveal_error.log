@@ -1,10 +1,1 @@
-all messages logged in file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_error.log
-Analyzing Verilog file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_reveal_coretop.v (VERI-1482)
-Analyzing Verilog file /home/andy/Downloads/tmp/raw_colorbar/top.v (VERI-1482)
-Analyzing Verilog file /home/andy/Downloads/tmp/raw_colorbar/clarity/pll_sensor_clk.v (VERI-1482)
-Analyzing Verilog file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar_gen.v (VERI-1482)
-INFO: /home/andy/Downloads/tmp/raw_colorbar/top.v(1): compiling module top (VERI-1018)
-INFO: /home/andy/Downloads/tmp/raw_colorbar/top.v(67): elaborating module 'top' (VERI-9000)
-INFO: /home/andy/Downloads/tmp/raw_colorbar/clarity/pll_sensor_clk.v(99): elaborating module 'pll_sensor_clk_uniq_1' (VERI-9000)
-INFO: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar_gen.v(533): elaborating module 'raw_colorbar_gen_uniq_1' (VERI-9000)
-Pretty printing all modules in library work to file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v (VERI-1491)
+all messages logged in file /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/reveal_error.log

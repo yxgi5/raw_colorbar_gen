@@ -1,73 +1,123 @@
 Logfile for Reveal Analyzer
 Version: Diamond 3.11.0.396.4
 Platform: Linux 64bit
-Filename: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_debug.log
-First created: Wed Apr 22 16:13:17 2020
-[16:13:19] runProject on device [1. LCMXO3LF-9400C] using /home/andy/Downloads/tmp/raw_colorbar/untitled.rva [test.rvl]
-[16:13:19] Connecting cableserver to run Reveal debugger....
-[16:13:24] @Connect
-[16:13:24] @SetSharableApplications,2,Reveal,Mico
-[16:13:32] @SetCablePort,USB2,FTUSB-1,8,0,0,1,1,0,0,0,1
-[16:13:32] @LockCable
-[16:13:32] @GetServerStatus
-[16:13:32] @Read
-[16:13:32] @SetTargetDevice,0
-[16:13:32] Connecting core0....
-[16:13:32] @ShiftIR,8,0,ER1
-[16:13:32] @ShiftDR,21,0,data (select core0)
-[16:13:32] @ShiftIR,8,0,ER2
-[16:13:32] Configuring core0....
-[16:13:32] @JumpState,RUN_TEST_IDLE
-[16:13:32] @JumpState,RUN_TEST_IDLE
-[16:13:32] @JumpState,RUN_TEST_IDLE
-[16:13:32] @ShiftIR,8,0,NOP
-[16:13:32] @JumpState,RUN_TEST_IDLE
-[16:13:32] @ShiftIR,8,0,ER2
-[16:13:32] @Set Odd Parity readback
-[16:13:32] @Set Odd Parity
-[16:13:32] @Set LA Start/Stop readback
-[16:13:32] @Set LA Start/Stop 
-[16:13:32] #Reveal IP Version = 1_6_042617
-[16:13:32] @Get Pattern
-[16:13:32] #pattern readout = 0
-[16:13:32] #pattern expected = A5A5
-[16:13:32] ERROR: core0 incorrect pattern readout. <a href='file:////opt/lscc/diamond/3.11_x64/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (1) to (6)</a>.
-[16:13:33] @UnlockCable
-[16:13:33] @ReleaseCablePort
-[16:13:33] @Disconnect
-[16:13:35] runProject on device [1. LCMXO3LF-9400C] using /home/andy/Downloads/tmp/raw_colorbar/untitled.rva [test.rvl]
-[16:13:35] Connecting cableserver to run Reveal debugger....
-[16:13:35] @Connect
-[16:13:35] @SetSharableApplications,2,Reveal,Mico
-[16:13:43] @SetCablePort,USB2,FTUSB-1,8,0,0,1,1,0,0,0,1
-[16:13:43] @LockCable
-[16:13:43] @GetServerStatus
-[16:13:43] @Read
-[16:13:43] @SetTargetDevice,0
-[16:13:43] Connecting core0....
-[16:13:43] @ShiftIR,8,0,ER1
-[16:13:43] @ShiftDR,21,0,data (select core0)
-[16:13:43] @ShiftIR,8,0,ER2
-[16:13:43] Configuring core0....
-[16:13:43] @JumpState,RUN_TEST_IDLE
-[16:13:43] @JumpState,RUN_TEST_IDLE
-[16:13:43] @JumpState,RUN_TEST_IDLE
-[16:13:43] @ShiftIR,8,0,NOP
-[16:13:43] @JumpState,RUN_TEST_IDLE
-[16:13:43] @ShiftIR,8,0,ER2
-[16:13:43] @Set Odd Parity readback
-[16:13:43] @Set Odd Parity
-[16:13:43] @Set LA Start/Stop readback
-[16:13:43] @Set LA Start/Stop 
-[16:13:43] #Reveal IP Version = 1_6_042617
-[16:13:43] @Get Pattern
-[16:13:43] #pattern readout = 0
-[16:13:43] #pattern expected = A5A5
-[16:13:43] ERROR: core0 incorrect pattern readout. <a href='file:////opt/lscc/diamond/3.11_x64/docs/manuals/troubleshoot.pdf#FailurePoints'>See Reveal Troubleshooting Guide for more details on Failure Points (1) to (6)</a>.
-[16:13:44] @UnlockCable
-[16:13:44] @ReleaseCablePort
-[16:13:44] @Disconnect
-[16:13:46] @ReleaseCablePort
-[16:13:46] @Disconnect
-[16:13:46] All messages logged in file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_debug.log
-Last closed: Wed Apr 22 16:14:04 2020
+Filename: /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/reveal_debug.log
+First created: Fri Apr 24 14:49:01 2020
+[14:49:03] runProject on device [1. LCMXO3LF-9400C] using /home/andy/Downloads/tmp/raw_colorbar_gen/untitled.rva [test.rvl]
+[14:49:03] Connecting cableserver to run Reveal debugger....
+[14:49:03] @Connect
+[14:49:03] @SetSharableApplications,2,Reveal,Mico
+[14:49:11] @SetCablePort,USB2,FTUSB-1,8,0,0,1,1,0,0,0,1
+[14:49:11] @LockCable
+[14:49:11] @GetServerStatus
+[14:49:11] @Read
+[14:49:11] @SetTargetDevice,0
+[14:49:11] Connecting core0....
+[14:49:11] @ShiftIR,8,0,ER1
+[14:49:11] @ShiftDR,21,0,data (select core0)
+[14:49:11] @ShiftIR,8,0,ER2
+[14:49:11] Configuring core0....
+[14:49:11] @JumpState,RUN_TEST_IDLE
+[14:49:11] @JumpState,RUN_TEST_IDLE
+[14:49:11] @JumpState,RUN_TEST_IDLE
+[14:49:11] @ShiftIR,8,0,NOP
+[14:49:11] @JumpState,RUN_TEST_IDLE
+[14:49:11] @ShiftIR,8,0,ER2
+[14:49:11] @Set Odd Parity readback
+[14:49:11] @Set Odd Parity
+[14:49:11] @Set LA Start/Stop readback
+[14:49:11] @Set LA Start/Stop 
+[14:49:11] #Reveal IP Version = 1_6_042617
+[14:49:11] @Get Pattern
+[14:49:11] #pattern readout = a5a5
+[14:49:11] pattern readout passed!
+[14:49:11] @Get Tracy Signature
+[14:49:11] @Get Tracy Signature
+[14:49:11] #signature from core0 = 288152936
+[14:49:11] signature from core0 passed!
+[14:49:11] @Set Opcode Value
+[14:49:11] @Set Comp Value
+[14:49:11] @Set Mask Value
+[14:49:11] @Set Opcode Value
+[14:49:11] @Set Comp Value
+[14:49:11] @Set Mask Value
+[14:49:11] @Set Opcode Value
+[14:49:11] @Set Comp Value
+[14:49:11] @Set Mask Value
+[14:49:11] @Set Then Num
+[14:49:11] @Set NEXT THEN
+[14:49:11] @Set Cnt Cntg
+[14:49:11] @Set Event Count
+[14:49:11] @Set Then Num
+[14:49:11] @Set NEXT THEN
+[14:49:11] @Set Cnt Cntg
+[14:49:11] @Set Event Count
+[14:49:11] @Set Event Count
+[14:49:11] @Set Then Num
+[14:49:11] @Set NEXT THEN
+[14:49:11] @Set Cnt Cntg
+[14:49:11] @Set Event Count
+[14:49:11] @Set Event Count
+[14:49:11] @Get BurstWrite CRC
+[14:49:11] @Set Truth Tbl Addr Cnter Init
+[14:49:11] @Set Truth Table Prog
+[14:49:11] Configuring in burst mode....
+[14:49:11] @Get BurstWrite CRC
+[14:49:11] @Enable TE Trig
+[14:49:11] @Enable Trig Output OR All readback
+[14:49:11] @Enable Trig Output OR All
+[14:49:11] @Set Pre-Trig Sample
+[14:49:11] @Set Post-Trig Sample
+[14:49:11] finished configuration of core0
+[14:49:11] Starting all active cores....
+[14:49:11] @ShiftIR,8,0,ER1
+[14:49:11] @ShiftDR,21,0,data (select active cores)
+[14:49:11] @ShiftIR,8,0,ER2
+[14:49:11] @Set LA Start cores
+[14:49:11] @UnlockCable
+[14:49:11] Running all active cores....
+[14:49:11] @LockCable
+[14:49:11] Polling trigger memory of core0....
+[14:49:11] @ShiftIR,8,0,ER1
+[14:49:11] @ShiftDR,21,0,data (select core0)
+[14:49:11] @ShiftIR,8,0,ER2
+[14:49:11] @Get Force Trigger bit
+[14:49:11] #TM_CTL_0=3
+[14:49:11] @Get Trig Detected Cnt
+[14:49:11] #numDetectedTriggers = 1
+[14:49:11] @Get Mem Block Full Cnt
+[14:49:11] #memFullCnt = 1
+[14:49:11] Downloading trigger memory of core0....
+[14:49:11] @Is LA Armed
+[14:49:11] @Set LA Start/Stop readback
+[14:49:11] @Set LA Start/Stop 
+[14:49:11] @Set LA Start/Stop readback
+[14:49:11] @Set LA Start/Stop 
+[14:49:11] @Get Trig Detected Cnt
+[14:49:11] #numDetectedTriggers = 1
+[14:49:11] @Get Mem Block Full Cnt
+[14:49:11] #memFullCnt = 1
+[14:49:11] @Get Last Addr Written
+[14:49:11] #lastAddrWritten = 1920
+[14:49:11] @Get Multiple Trig Enbl
+[14:49:11] #traceWidth=37, userSelectedTriggers=1, numTrigEnable=1
+[14:49:11] @Get BurstRead CRC
+[14:49:11] @Set Trace Mem Cnter Init
+[14:49:11] Uploading in burst mode....
+[14:49:11] @ShiftDR,75776,1,data (burst read)
+[14:49:11] @GetTDO,data,75776
+[14:49:11] @Get BurstRead CRC
+[14:49:11] @Get BurstRead CRC
+[14:49:11] @Get Pre-Trig Sample Num
+[14:49:11] @Get Post-Trig Sample Num
+[14:49:11] @Get Pre-Trig Samples Captured
+[14:49:11] @Get Trig Ptr
+[14:49:11] #trigPtr = 6
+[14:49:11] #dataSize=5, numRead=2048, trace_out=1921
+[14:49:11] #trig0={blockPosition:0,triggerPosition:1}
+[14:49:11] finished download trigger memory of core0
+[14:49:11] @UnlockCable
+[14:49:12] @ReleaseCablePort
+[14:49:12] @Disconnect
+[14:49:12] All messages logged in file /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/reveal_debug.log
+Last closed: Fri Apr 24 15:33:11 2020

@@ -1,4 +1,6 @@
-用于模仿 dvp raw 摄像头的视频源模块，运行于XO3, 接入hi3559av100验证
+用于模仿 dvp raw 摄像头的视频源模块，运行于ecp5-vip-processor-board, 接入hi3559av100验证
+
+参数化bayer样式
 
 
 ifconfig eth0 192.168.1.47

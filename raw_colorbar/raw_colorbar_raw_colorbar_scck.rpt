@@ -12,7 +12,7 @@ Hostname: debian-dell
 
 Implementation : raw_colorbar
 
-# Written on Thu Apr 23 09:47:07 2020
+# Written on Fri Apr 24 15:44:09 2020
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -29,26 +29,18 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                                     Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                     Frequency     Period        Type         Group                   Load 
---------------------------------------------------------------------------------------------------------------------------
-0 -       System                                    100.0 MHz     10.000        system       system_clkgroup         0    
-                                                                                                                          
-0 -       top|w_pixclk                              100.0 MHz     10.000        inferred     Inferred_clkgroup_1     289  
-                                                                                                                          
-0 -       reveal_coretop|jtck_inferred_clock[0]     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     281  
-==========================================================================================================================
+          Start                                   Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                   Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------
+0 -       pll_sensor_clk|CLKOP_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     44   
+========================================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                                          Clock     Source                                                             Clock Pin                                                            Non-clock Pin     Non-clock Pin                                                              
-Clock                                     Load      Pin                                                                Seq Example                                                          Seq Example       Comb Example                                                               
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                    0         -                                                                  -                                                                    -                 -                                                                          
-                                                                                                                                                                                                                                                                                         
-top|w_pixclk                              289       u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLJ)                          top_reveal_coretop_instance.top_la0_inst_0.tm_u.sample_en_d.C        -                 -                                                                          
-                                                                                                                                                                                                                                                                                         
-reveal_coretop|jtck_inferred_clock[0]     281       top_reveal_coretop_instance.jtagconn16_inst_0.jtck(jtagconn16)     top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_first_rd_d1.C     -                 top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.un1_jtck.I[0](inv)
-=========================================================================================================================================================================================================================================================================================
+                                        Clock     Source                                        Clock Pin                   Non-clock Pin     Non-clock Pin
+Clock                                   Load      Pin                                           Seq Example                 Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+pll_sensor_clk|CLKOP_inferred_clock     44        u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLL)     u_raw_colorbar_gen.fv.C     -                 -            
+===========================================================================================================================================================

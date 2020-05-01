@@ -1,22 +1,23 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Thu Apr 23 09:47:27 2020 *
+NOTE DATE CREATED: Fri Apr 24 15:44:40 2020 *
 NOTE DESIGN NAME: top *
-NOTE DEVICE NAME: LCMXO3LF-9400C-6CABGA484 *
+NOTE DEVICE NAME: LFE5UM-85F-8CABGA756 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS test : D13 : out *
-NOTE PINS pixdata[0] : N5 : out *
-NOTE PINS pixclk : U2 : out *
-NOTE PINS lv : V1 : out *
-NOTE PINS fv : T6 : out *
-NOTE PINS pixdata[9] : U3 : out *
-NOTE PINS pixdata[8] : T5 : out *
-NOTE PINS pixdata[7] : T3 : out *
-NOTE PINS pixdata[6] : R5 : out *
-NOTE PINS pixdata[5] : R7 : out *
-NOTE PINS pixdata[4] : R4 : out *
-NOTE PINS pixdata[3] : P6 : out *
-NOTE PINS pixdata[2] : P5 : out *
-NOTE PINS pixdata[1] : N7 : out *
-NOTE CONFIGURATION MODE: NONE *
-NOTE COMPRESSION: on *
+NOTE PINS test : A13 : out *
+NOTE PINS pixdata[0] : K26 : out *
+NOTE PINS clk_in : E17 : in *
+NOTE PINS pixclk : F32 : out *
+NOTE PINS lv : P26 : out *
+NOTE PINS fv : D30 : out *
+NOTE PINS pixdata[9] : F29 : out *
+NOTE PINS pixdata[8] : C29 : out *
+NOTE PINS pixdata[7] : C30 : out *
+NOTE PINS pixdata[6] : H32 : out *
+NOTE PINS pixdata[5] : K29 : out *
+NOTE PINS pixdata[4] : J30 : out *
+NOTE PINS pixdata[3] : P27 : out *
+NOTE PINS pixdata[2] : J29 : out *
+NOTE PINS pixdata[1] : K27 : out *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: off *

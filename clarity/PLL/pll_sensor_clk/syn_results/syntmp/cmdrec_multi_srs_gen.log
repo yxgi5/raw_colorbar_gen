@@ -1,0 +1,8 @@
+/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter  -link  -top  pll_sensor_clk  -multisrs  /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/pll_sensor_clk_comp.srs  -osyn  /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synwork/pll_sensor_clk_mult.srs  -log  /home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/syn_results/synlog/pll_sensor_clk_multi_srs_gen.srr 
+relcom:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter -link -top pll_sensor_clk -multisrs ../synwork/pll_sensor_clk_comp.srs -osyn ../synwork/pll_sensor_clk_mult.srs -log ../synlog/pll_sensor_clk_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/pll_sensor_clk_comp.srs|io:i|time:1587713657|size:4806|exec:0|csum:8024278D9F286C10E1751A389A09B72B
+file:../synwork/pll_sensor_clk_mult.srs|io:o|time:1587713658|size:4453|exec:0|csum:
+file:../synlog/pll_sensor_clk_multi_srs_gen.srr|io:o|time:1587713658|size:1202|exec:0|csum:
+file:/opt/lscc/diamond/3.11_x64/synpbase/linux_a_64/syn_nfilter|io:i|time:1554136095|size:13311896|exec:1|csum:98436EBE5B2063E67A0107F26BF96360
+file:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter|io:i|time:1554135608|size:366|exec:1|csum:FA02E240C38072139DDDFB111F4F0C5E

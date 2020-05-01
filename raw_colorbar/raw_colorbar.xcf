@@ -8,30 +8,28 @@
 			<SelectedProg value="TRUE"/>
 			<Pos>1</Pos>
 			<Vendor>Lattice</Vendor>
-			<Family>MachXO3LF</Family>
-			<Name>LCMXO3LF-9400C</Name>
-			<IDCode>0x612be043</IDCode>
+			<Family>ECP5UM</Family>
+			<Name>LFE5UM-85F</Name>
+			<IDCode>0x01113043</IDCode>
 			<Package>All</Package>
-			<PON>LCMXO3LF-9400C</PON>
+			<PON>LFE5UM-85F</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar.bit</File>
-			<FileTime>04/23/20 09:47:27</FileTime>
-			<Operation>SRAM Fast Program</Operation>
+			<File>/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar.bit</File>
+			<FileTime>04/24/20 15:44:40</FileTime>
+			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
-				<PreloadLength>760</PreloadLength>
-				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
-				<OverideUES value="TRUE"/>
+				<PreloadLength>750</PreloadLength>
+				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
-				<SVFProcessor>ispVM</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
-				<AccessMode>SRAM</AccessMode>
+				<AccessMode>JTAG</AccessMode>
 			</Option>
 		</Device>
 	</Chain>
@@ -47,10 +45,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-1</PortAdd>
-		<USBID>DUAL RS232-HS A Location 0001 Serial DUAL RS232-HS A</USBID>
-		<JTAGPinSetting>
-			TRST	ABSENT;
-			ISPEN	ABSENT;
-		</JTAGPinSetting>
+		<USBID>USB --- SERIAL CONVERTER A Location 0001 Serial USB --- SERIAL CONVERTER A</USBID>
 	</CableOptions>
 </ispXCF>

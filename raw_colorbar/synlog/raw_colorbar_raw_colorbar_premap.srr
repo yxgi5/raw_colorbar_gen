@@ -1,4 +1,4 @@
-# Thu Apr 23 09:47:07 2020
+# Fri Apr 24 15:44:09 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -20,75 +20,56 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 
 @A: MF827 |No constraint file specified.
 @N: MF284 |Setting synthesis effort to medium for the design
-@L: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar_scck.rpt 
-Printing clock  summary report in "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar_scck.rpt" file 
+@L: /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar_scck.rpt 
+Printing clock  summary report in "/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar_scck.rpt" file 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 114MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":82:11:82:14|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":857:4:857:9|Removing sequential instance vsync (in view: work.raw_colorbar_gen_uniq_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":857:4:857:9|Removing sequential instance hsync (in view: work.raw_colorbar_gen_uniq_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-Encoding state machine next_then_shift[2:0] (in view: work.rvl_te_Z3_1(verilog))
-original code -> new code
-   00 -> 00
-   01 -> 01
-   10 -> 10
-Encoding state machine next_then_shift[2:0] (in view: work.rvl_te_Z3_0(verilog))
-original code -> new code
-   00 -> 00
-   01 -> 01
-   10 -> 10
-@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
-syn_allowed_resources : blockrams=442  set on top level netlist top
+@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar_gen/top.v":11:8:11:11|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":44:0:44:5|Removing sequential instance vsync (in view: work.raw_colorbar_gen_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":44:0:44:5|Removing sequential instance hsync (in view: work.raw_colorbar_gen_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=208  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
 
 Clock Summary
 ******************
 
-          Start                                     Requested     Requested     Clock        Clock                   Clock
-Level     Clock                                     Frequency     Period        Type         Group                   Load 
---------------------------------------------------------------------------------------------------------------------------
-0 -       System                                    100.0 MHz     10.000        system       system_clkgroup         0    
-                                                                                                                          
-0 -       top|w_pixclk                              100.0 MHz     10.000        inferred     Inferred_clkgroup_1     289  
-                                                                                                                          
-0 -       reveal_coretop|jtck_inferred_clock[0]     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     281  
-==========================================================================================================================
+          Start                                   Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                   Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------------
+0 -       pll_sensor_clk|CLKOP_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     44   
+========================================================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                          Clock     Source                                                             Clock Pin                                                            Non-clock Pin     Non-clock Pin                                                              
-Clock                                     Load      Pin                                                                Seq Example                                                          Seq Example       Comb Example                                                               
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                    0         -                                                                  -                                                                    -                 -                                                                          
-                                                                                                                                                                                                                                                                                         
-top|w_pixclk                              289       u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLJ)                          top_reveal_coretop_instance.top_la0_inst_0.tm_u.sample_en_d.C        -                 -                                                                          
-                                                                                                                                                                                                                                                                                         
-reveal_coretop|jtck_inferred_clock[0]     281       top_reveal_coretop_instance.jtagconn16_inst_0.jtck(jtagconn16)     top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_first_rd_d1.C     -                 top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.un1_jtck.I[0](inv)
-=========================================================================================================================================================================================================================================================================================
+                                        Clock     Source                                        Clock Pin                   Non-clock Pin     Non-clock Pin
+Clock                                   Load      Pin                                           Seq Example                 Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+pll_sensor_clk|CLKOP_inferred_clock     44        u_pll_sensor_clk.PLLInst_0.CLKOP(EHXPLLL)     u_raw_colorbar_gen.fv.C     -                 -            
+===========================================================================================================================================================
 
-@W: MT529 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":857:4:857:9|Found inferred clock top|w_pixclk which controls 289 sequential elements including u_raw_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":44:0:44:5|Found inferred clock pll_sensor_clk|CLKOP_inferred_clock which controls 44 sequential elements including u_raw_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -102,15 +83,14 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 570 clock pin(s) of sequential element(s)
-0 instances converted, 570 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 44 clock pin(s) of sequential element(s)
+0 instances converted, 44 sequential instances remain driven by gated/generated clocks
 
-============================================================================= Gated/Generated Clocks =============================================================================
-Clock Tree ID     Driving Element                                        Drive Element Type     Unconverted Fanout     Sample Instance                     Explanation            
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       u_pll_sensor_clk.PLLInst_0.CLKOP                       EHXPLLJ                289                    u_raw_colorbar_gen.linecnt[9:0]     Black box on clock path
-@KP:ckid0_3       top_reveal_coretop_instance.jtagconn16_inst_0.jtck     jtagconn16             281                    ENCRYPTED                           Black box on clock path
-==================================================================================================================================================================================
+==================================================================== Gated/Generated Clocks ====================================================================
+Clock Tree ID     Driving Element                      Drive Element Type     Unconverted Fanout     Sample Instance                     Explanation            
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       u_pll_sensor_clk.PLLInst_0.CLKOP     EHXPLLL                44                     u_raw_colorbar_gen.linecnt[9:0]     Black box on clock path
+================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -118,21 +98,21 @@ Clock Tree ID     Driving Element                                        Drive E
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 145MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 23 09:47:08 2020
+# Fri Apr 24 15:44:09 2020
 
 ###########################################################]

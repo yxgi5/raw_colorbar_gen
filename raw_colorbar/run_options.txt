@@ -1,18 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03L-SP1-1
-#--  Project file /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/run_options.txt
-#--  Written on Thu Apr 23 09:47:05 2020
+#--  Project file /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/run_options.txt
+#--  Written on Fri Apr 24 15:44:07 2020
 
 
 #project files
-add_file -verilog "/opt/lscc/diamond/3.11_x64/cae_library/synthesis/verilog/pmi_def.v"
-add_file -verilog "/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v"
-add_file -verilog "/opt/lscc/diamond/3.11_x64/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v"
-add_file -verilog "/opt/lscc/diamond/3.11_x64/module/reveal/src/rvl_j2w_module/wb2sci.v"
-add_file -verilog "/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/JTAG_SOFT.v"
-add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_trig_gen.v"
-add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_la0_gen.v"
-add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v"
+add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar_gen/top.v"
+add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v"
+add_file -verilog "/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v"
 
 
 
@@ -24,13 +19,14 @@ impl -add raw_colorbar -type fpga
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {/home/andy/Downloads/tmp/raw_colorbar}
+set_option -hdl_define -set SBP_SYNTHESIS
+set_option -include_path {/home/andy/Downloads/tmp/raw_colorbar_gen}
 
 #device options
-set_option -technology MACHXO3LF
-set_option -part LCMXO3LF_9400C
-set_option -package BG484C
-set_option -speed_grade -6
+set_option -technology ECP5UM
+set_option -part LFE5UM_85F
+set_option -package BG756C
+set_option -speed_grade -8
 set_option -part_companion ""
 
 #compilation/mapping options
@@ -71,7 +67,6 @@ set_option -resource_sharing 1
 set_option -multi_file_compilation_unit 1
 
 # Compiler Options
-set_option -allow_duplicate_modules 1
 set_option -auto_infer_blackbox 0
 
 #automatic place and route (vendor) options
@@ -81,5 +76,5 @@ set_option -write_apr_constraint 1
 project -result_file "./raw_colorbar_raw_colorbar.edi"
 
 #set log file 
-set_option log_file "/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar.srf" 
+set_option log_file "/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar.srf" 
 impl -active "raw_colorbar"

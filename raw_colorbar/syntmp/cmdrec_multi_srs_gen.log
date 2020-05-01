@@ -1,8 +1,8 @@
-/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter  -link  -top  top  -multisrs  /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synwork/raw_colorbar_raw_colorbar_comp.srs  -osyn  /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synwork/raw_colorbar_raw_colorbar_mult.srs  -log  /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synlog/raw_colorbar_raw_colorbar_multi_srs_gen.srr 
+/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter  -link  -top  top  -multisrs  /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synwork/raw_colorbar_raw_colorbar_comp.srs  -osyn  /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synwork/raw_colorbar_raw_colorbar_mult.srs  -log  /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synlog/raw_colorbar_raw_colorbar_multi_srs_gen.srr 
 relcom:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter -link -top top -multisrs ../synwork/raw_colorbar_raw_colorbar_comp.srs -osyn ../synwork/raw_colorbar_raw_colorbar_mult.srs -log ../synlog/raw_colorbar_raw_colorbar_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:../synwork/raw_colorbar_raw_colorbar_comp.srs|io:i|time:1587606426|size:157337|exec:0|csum:29D44CA87D2948962D6E3952CBC04118
-file:../synwork/raw_colorbar_raw_colorbar_mult.srs|io:o|time:1587606427|size:5584|exec:0|csum:
-file:../synlog/raw_colorbar_raw_colorbar_multi_srs_gen.srr|io:o|time:1587606427|size:1154|exec:0|csum:
+file:../synwork/raw_colorbar_raw_colorbar_comp.srs|io:i|time:1587714247|size:10179|exec:0|csum:C1AFCFF61EDFEF836C69226F87B9B1E7
+file:../synwork/raw_colorbar_raw_colorbar_mult.srs|io:o|time:1587714248|size:3110|exec:0|csum:
+file:../synlog/raw_colorbar_raw_colorbar_multi_srs_gen.srr|io:o|time:1587714248|size:1162|exec:0|csum:
 file:/opt/lscc/diamond/3.11_x64/synpbase/linux_a_64/syn_nfilter|io:i|time:1554136095|size:13311896|exec:1|csum:98436EBE5B2063E67A0107F26BF96360
 file:/opt/lscc/diamond/3.11_x64/synpbase/bin/syn_nfilter|io:i|time:1554135608|size:366|exec:1|csum:FA02E240C38072139DDDFB111F4F0C5E

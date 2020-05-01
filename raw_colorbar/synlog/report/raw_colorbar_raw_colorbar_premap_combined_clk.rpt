@@ -7,15 +7,14 @@
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 570 clock pin(s) of sequential element(s)
-0 instances converted, 570 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 44 clock pin(s) of sequential element(s)
+0 instances converted, 44 sequential instances remain driven by gated/generated clocks
 
-============================================================================= Gated/Generated Clocks =============================================================================
-Clock Tree ID     Driving Element                                        Drive Element Type     Unconverted Fanout     Sample Instance                     Explanation            
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       u_pll_sensor_clk.PLLInst_0.CLKOP                       EHXPLLJ                289                    u_raw_colorbar_gen.linecnt[9:0]     Black box on clock path
-@KP:ckid0_3       top_reveal_coretop_instance.jtagconn16_inst_0.jtck     jtagconn16             281                    ENCRYPTED                           Black box on clock path
-==================================================================================================================================================================================
+==================================================================== Gated/Generated Clocks ====================================================================
+Clock Tree ID     Driving Element                      Drive Element Type     Unconverted Fanout     Sample Instance                     Explanation            
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       u_pll_sensor_clk.PLLInst_0.CLKOP     EHXPLLL                44                     u_raw_colorbar_gen.linecnt[9:0]     Black box on clock path
+================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######

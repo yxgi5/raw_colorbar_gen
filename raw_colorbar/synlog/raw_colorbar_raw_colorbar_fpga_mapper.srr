@@ -1,4 +1,4 @@
-# Thu Apr 23 09:47:08 2020
+# Fri Apr 24 15:44:09 2020
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -37,107 +37,97 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MF284 |Setting synthesis effort to medium for the design
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":82:11:82:14|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar_gen/top.v":11:8:11:11|Tristate driver test (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@N: MF237 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":1310:52:1310:68|Generating a type rem remainder 
+@N: MF237 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":754:19:754:33|Generating a type rem remainder 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":917:4:917:9|Found counter in view:work.raw_colorbar_gen_uniq_1(verilog) instance color_cntr[11:0] 
-@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Found counter in view:work.raw_colorbar_gen_uniq_1(verilog) instance rstn_cnt[7:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":116:0:116:5|Found counter in view:work.raw_colorbar_gen_Z1(verilog) instance color_cntr[11:0] 
+@N: MO231 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Found counter in view:work.raw_colorbar_gen_Z1(verilog) instance rstn_cnt[7:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 148MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 150MB peak: 151MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 151MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 151MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 151MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 151MB peak: 151MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 160MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 146MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		   -14.52ns		 668 /       556
-   2		0h:00m:01s		   -14.49ns		 665 /       556
-   3		0h:00m:01s		   -14.49ns		 665 /       556
-   4		0h:00m:01s		   -14.49ns		 665 /       556
-   5		0h:00m:01s		   -14.49ns		 665 /       556
-   6		0h:00m:01s		   -14.49ns		 665 /       556
+   1		0h:00m:00s		    -1.53ns		  49 /        44
+   2		0h:00m:00s		    -1.53ns		  48 /        44
+   3		0h:00m:00s		    -1.45ns		  49 /        44
+   4		0h:00m:00s		    -1.71ns		  49 /        44
+   5		0h:00m:00s		    -1.71ns		  49 /        44
+   6		0h:00m:00s		    -1.71ns		  49 /        44
+   7		0h:00m:00s		    -1.71ns		  49 /        44
 
-   7		0h:00m:01s		   -14.05ns		 670 /       556
-   8		0h:00m:01s		   -14.49ns		 671 /       556
+   8		0h:00m:01s		    -1.53ns		  48 /        44
 
-   9		0h:00m:01s		   -14.05ns		 669 /       556
-  10		0h:00m:01s		   -14.05ns		 670 /       556
-  11		0h:00m:01s		   -14.07ns		 671 /       556
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 160MB)
+   9		0h:00m:01s		    -1.76ns		  49 /        44
+  10		0h:00m:01s		    -1.74ns		  50 /        44
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":82:11:82:14|Tristate driver test_obuft.un1[0] (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
-@W: MO161 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Register bit u_raw_colorbar_gen.rstn_cnt[7] (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[6] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[5] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[4] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[3] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[2] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[1] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[0] (in view: work.top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@W: BN114 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing instance u_raw_colorbar_gen.rstn_cnt_s_0[7] (in view: work.top(verilog)) of black box view:LUCENT.CCU2D(PRIM) because it does not drive other instances.
-@W: BN114 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing instance u_raw_colorbar_gen.rstn_cnt_cry_0[5] (in view: work.top(verilog)) of black box view:LUCENT.CCU2D(PRIM) because it does not drive other instances.
-@W: BN114 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing instance u_raw_colorbar_gen.rstn_cnt_cry_0[3] (in view: work.top(verilog)) of black box view:LUCENT.CCU2D(PRIM) because it does not drive other instances.
-@W: BN114 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":851:4:851:9|Removing instance u_raw_colorbar_gen.rstn_cnt_cry_0[1] (in view: work.top(verilog)) of black box view:LUCENT.CCU2D(PRIM) because it does not drive other instances.
-@W: BN114 :|Removing instance u_raw_colorbar_gen.rstn_cnt_cry_0[0] (in view: work.top(verilog)) of black box view:LUCENT.CCU2D(PRIM) because it does not drive other instances.
+@N: MO111 :"/home/andy/Downloads/tmp/raw_colorbar_gen/top.v":11:8:11:11|Tristate driver test_obuft.un1[0] (in view: work.top(verilog)) on net test (in view: work.top(verilog)) has its enable tied to GND.
+@W: MO161 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Register bit u_raw_colorbar_gen.rstn_cnt[7] (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[0] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[1] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[2] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[3] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[4] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[5] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
+@N: BN362 :"/home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar_gen.v":37:0:37:5|Removing sequential instance u_raw_colorbar_gen.rstn_cnt[6] (in view: work.top(verilog)) of type view:LUCENT.FD1S3AX(PRIM) because it does not drive other instances.
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 157MB peak: 160MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 148MB peak: 149MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 160MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 149MB)
 
-Writing Analyst data base /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/synwork/raw_colorbar_raw_colorbar_m.srm
+Writing Analyst data base /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/synwork/raw_colorbar_raw_colorbar_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 157MB peak: 160MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 149MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/raw_colorbar_raw_colorbar.edi
+@N: FX1056 |Writing EDF file: /home/andy/Downloads/tmp/raw_colorbar_gen/raw_colorbar/raw_colorbar_raw_colorbar.edi
 N-2018.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 165MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 160MB peak: 165MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
 
-@W: MT246 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":786:12:786:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/home/andy/Downloads/tmp/raw_colorbar/raw_colorbar/reveal_workspace/tmpreveal/top_rvl.v":68:15:68:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v":1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v":1161:8:1161:21|Blackbox pmi_distributed_dpram_8s_3s_2s_reg_none_binary_XO3LF_pmi_distributed_dpram_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"/opt/lscc/diamond/3.11_x64/module/reveal/src/ertl/ertl.v":2162:8:2162:13|Blackbox pmi_ram_dp_Z6 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT420 |Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on net top_reveal_coretop_instance.jtck[0].
-@W: MT420 |Found inferred clock top|w_pixclk with period 10.00ns. Please declare a user-defined clock on net w_pixclk.
+@W: MT246 :"/home/andy/Downloads/tmp/raw_colorbar_gen/clarity/PLL/pll_sensor_clk/pll_sensor_clk.v":56:12:56:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll_sensor_clk|CLKOP_inferred_clock with period 10.00ns. Please declare a user-defined clock on net u_pll_sensor_clk.w_pixclk.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 23 09:47:11 2020
+# Timing Report written on Fri Apr 24 15:44:11 2020
 #
 
 
@@ -156,15 +146,15 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -13.726
+Worst slack in design: -2.274
 
-                                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
-Starting Clock                            Frequency     Frequency     Period        Period        Slack       Type         Group              
-----------------------------------------------------------------------------------------------------------------------------------------------
-reveal_coretop|jtck_inferred_clock[0]     100.0 MHz     102.8 MHz     10.000        9.725         0.275       inferred     Inferred_clkgroup_0
-top|w_pixclk                              100.0 MHz     42.1 MHz      10.000        23.726        -13.726     inferred     Inferred_clkgroup_1
-System                                    100.0 MHz     202.7 MHz     10.000        4.933         5.067       system       system_clkgroup    
-==============================================================================================================================================
+                                        Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                          Frequency     Frequency     Period        Period        Slack      Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------
+pll_sensor_clk|CLKOP_inferred_clock     100.0 MHz     81.5 MHz      10.000        12.274        -2.274     inferred     Inferred_clkgroup_0
+System                                  100.0 MHz     NA            10.000        NA            NA         system       system_clkgroup    
+===========================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
 
 
@@ -173,20 +163,12 @@ System                                    100.0 MHz     202.7 MHz     10.000    
 Clock Relationships
 *******************
 
-Clocks                                                                        |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                               Ending                                 |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                 System                                 |  10.000      5.067    |  No paths    -      |  No paths    -      |  No paths    -    
-System                                 reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  No paths    -      |  10.000      2.778  |  No paths    -    
-System                                 top|w_pixclk                           |  10.000      7.767    |  No paths    -      |  No paths    -      |  No paths    -    
-reveal_coretop|jtck_inferred_clock[0]  System                                 |  No paths    -        |  No paths    -      |  No paths    -      |  10.000      3.076
-reveal_coretop|jtck_inferred_clock[0]  reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  10.000      0.275  |  No paths    -      |  No paths    -    
-reveal_coretop|jtck_inferred_clock[0]  top|w_pixclk                           |  No paths    -        |  No paths    -      |  No paths    -      |  Diff grp    -    
-top|w_pixclk                           System                                 |  10.000      4.423    |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk                           reveal_coretop|jtck_inferred_clock[0]  |  No paths    -        |  No paths    -      |  Diff grp    -      |  No paths    -    
-top|w_pixclk                           top|w_pixclk                           |  10.000      -13.726  |  No paths    -      |  No paths    -      |  No paths    -    
-======================================================================================================================================================================
+Clocks                                                                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                             Ending                               |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll_sensor_clk|CLKOP_inferred_clock  pll_sensor_clk|CLKOP_inferred_clock  |  10.000      -2.274  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -200,7 +182,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: reveal_coretop|jtck_inferred_clock[0]
+Detailed Report for Clock: pll_sensor_clk|CLKOP_inferred_clock
 ====================================
 
 
@@ -208,41 +190,41 @@ Detailed Report for Clock: reveal_coretop|jtck_inferred_clock[0]
 Starting Points with Worst Slack
 ********************************
 
-                                                                             Starting                                                                             Arrival          
-Instance                                                                     Reference                                 Type        Pin     Net                    Time        Slack
-                                                                             Clock                                                                                                 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[0]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       tr_dout_bit_cnt[0]     1.044       0.275
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[1]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       tr_dout_bit_cnt[1]     1.044       0.275
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[3]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       tr_dout_bit_cnt[3]     1.044       0.275
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[5]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       tr_dout_bit_cnt[5]     1.044       0.275
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[16]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[0]                1.374       0.787
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[17]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[1]                1.355       0.807
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[25]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[9]                1.341       1.198
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[24]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[8]                1.284       1.255
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[0]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[0]           1.044       1.275
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.te_precnt[1]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       te_precnt[1]           1.044       1.275
-===================================================================================================================================================================================
+                                      Starting                                                                       Arrival           
+Instance                              Reference                               Type        Pin     Net                Time        Slack 
+                                      Clock                                                                                            
+---------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]     pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[10]     0.838       -2.274
+u_raw_colorbar_gen.color_cntr[11]     pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[11]     0.838       -2.215
+u_raw_colorbar_gen.color_cntr[9]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[9]      0.838       -0.695
+u_raw_colorbar_gen.color_cntr[8]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[8]      0.838       0.885 
+u_raw_colorbar_gen.color_cntr[7]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[7]      0.838       2.465 
+u_raw_colorbar_gen.color_cntr[6]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       color_cntr[6]      0.883       3.999 
+u_raw_colorbar_gen.pixcnt[0]          pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       pixcnt[0]          0.883       4.622 
+u_raw_colorbar_gen.pixcnt[1]          pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       pixcnt[1]          0.798       4.707 
+u_raw_colorbar_gen.pixcnt[2]          pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       pixcnt[2]          0.798       4.707 
+u_raw_colorbar_gen.pixcnt[3]          pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     Q       pixcnt[3]          0.798       4.707 
+=======================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                                        Starting                                                                                Required          
-Instance                                                                Reference                                 Type        Pin     Net                       Time         Slack
-                                                                        Clock                                                                                                     
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[9]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[9]      9.894        0.275
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[10]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[10]     9.894        0.275
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[7]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[7]      9.894        0.417
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[8]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[8]      9.894        0.417
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[5]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[5]      9.894        0.560
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[6]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[6]      9.894        0.560
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[3]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[3]      9.894        0.703
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[4]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[4]      9.894        0.703
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc       reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       parity_calc_5             10.089       0.787
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[1]      reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       tm_rd_addr_cntr_s[1]      9.894        0.846
-==================================================================================================================================================================================
+                                   Starting                                                                        Required           
+Instance                           Reference                               Type        Pin     Net                 Time         Slack 
+                                   Clock                                                                                              
+--------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.raw_data[0]     pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       raw_data_8[0]       9.789        -2.274
+u_raw_colorbar_gen.linecnt[9]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[9]     9.789        4.622 
+u_raw_colorbar_gen.linecnt[7]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[7]     9.789        4.681 
+u_raw_colorbar_gen.linecnt[5]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[5]     9.789        4.740 
+u_raw_colorbar_gen.linecnt[6]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[6]     9.789        4.740 
+u_raw_colorbar_gen.linecnt[3]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[3]     9.789        4.799 
+u_raw_colorbar_gen.linecnt[2]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un65_linecnt[2]     9.789        4.858 
+u_raw_colorbar_gen.linecnt[8]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un2_linecnt[8]      9.789        5.024 
+u_raw_colorbar_gen.linecnt[4]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un2_linecnt[4]      9.789        5.142 
+u_raw_colorbar_gen.linecnt[1]      pll_sensor_clk|CLKOP_inferred_clock     FD1S3AX     D       un2_linecnt[1]      9.789        5.201 
+======================================================================================================================================
 
 
 
@@ -252,665 +234,442 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.106
+    - Setup time:                            0.211
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.894
+    = Required time:                         9.789
 
-    - Propagation time:                      9.620
+    - Propagation time:                      12.063
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.275
+    = Slack (critical) :                     -2.274
 
-    Number of logic level(s):                10
-    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[0] / Q
-    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[10] / D
-    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
-    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
-
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_dout_bit_cnt[0]     FD1P3DX      Q        Out     1.044     1.044       -         
-tr_dout_bit_cnt[0]                                                           Net          -        -       -         -           2         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_bit_0_3             ORCALUT4     A        In      0.000     1.044       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_bit_0_3             ORCALUT4     Z        Out     1.089     2.133       -         
-tr_bit_0_3                                                                   Net          -        -       -         -           2         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_bit_0               ORCALUT4     A        In      0.000     2.133       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tr_bit_0               ORCALUT4     Z        Out     1.381     3.513       -         
-tr_bit_0                                                                     Net          -        -       -         -           39        
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr19            ORCALUT4     C        In      0.000     3.513       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr19            ORCALUT4     Z        Out     1.153     4.666       -         
-tm_rd_addr_cntr19                                                            Net          -        -       -         -           3         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.un1_capture_dr_0             ORCALUT4     C        In      0.000     4.666       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.un1_capture_dr_0             ORCALUT4     Z        Out     1.289     5.955       -         
-tm_rd_addr_cntr                                                              Net          -        -       -         -           12        
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[0]     CCU2D        A1       In      0.000     5.955       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[0]     CCU2D        COUT     Out     1.544     7.500       -         
-tm_rd_addr_cntr_cry[0]                                                       Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[1]     CCU2D        CIN      In      0.000     7.500       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[1]     CCU2D        COUT     Out     0.143     7.642       -         
-tm_rd_addr_cntr_cry[2]                                                       Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[3]     CCU2D        CIN      In      0.000     7.642       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[3]     CCU2D        COUT     Out     0.143     7.785       -         
-tm_rd_addr_cntr_cry[4]                                                       Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[5]     CCU2D        CIN      In      0.000     7.785       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[5]     CCU2D        COUT     Out     0.143     7.928       -         
-tm_rd_addr_cntr_cry[6]                                                       Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[7]     CCU2D        CIN      In      0.000     7.928       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[7]     CCU2D        COUT     Out     0.143     8.071       -         
-tm_rd_addr_cntr_cry[8]                                                       Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[9]     CCU2D        CIN      In      0.000     8.071       -         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr_cry_0[9]     CCU2D        S1       Out     1.549     9.620       -         
-tm_rd_addr_cntr_s[10]                                                        Net          -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[10]          FD1P3DX      D        In      0.000     9.620       -         
-===========================================================================================================================================
-
-
-
-
-====================================
-Detailed Report for Clock: top|w_pixclk
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                                      Starting                                                Arrival            
-Instance                              Reference        Type        Pin     Net                Time        Slack  
-                                      Clock                                                                      
------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]     top|w_pixclk     FD1S3AX     Q       color_cntr[10]     1.108       -13.726
-u_raw_colorbar_gen.color_cntr[11]     top|w_pixclk     FD1S3AX     Q       color_cntr[11]     1.108       -13.583
-u_raw_colorbar_gen.color_cntr[9]      top|w_pixclk     FD1S3AX     Q       color_cntr[9]      1.108       -10.281
-u_raw_colorbar_gen.color_cntr[8]      top|w_pixclk     FD1S3AX     Q       color_cntr[8]      1.108       -6.837 
-u_raw_colorbar_gen.color_cntr[7]      top|w_pixclk     FD1S3AX     Q       color_cntr[7]      1.108       -3.393 
-u_raw_colorbar_gen.color_cntr[6]      top|w_pixclk     FD1S3AX     Q       color_cntr[6]      1.108       0.051  
-u_raw_colorbar_gen.pixcnt[0]          top|w_pixclk     FD1S3AX     Q       pixcnt[0]          1.180       0.204  
-u_raw_colorbar_gen.pixcnt[1]          top|w_pixclk     FD1S3AX     Q       pixcnt[1]          1.044       0.340  
-u_raw_colorbar_gen.pixcnt[2]          top|w_pixclk     FD1S3AX     Q       pixcnt[2]          1.044       0.340  
-u_raw_colorbar_gen.pixcnt[3]          top|w_pixclk     FD1S3AX     Q       pixcnt[3]          1.044       0.340  
-=================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                                   Starting                                                 Required            
-Instance                           Reference        Type        Pin     Net                 Time         Slack  
-                                   Clock                                                                        
-----------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.raw_data[0]     top|w_pixclk     FD1S3AX     D       raw_data_8[0]       10.462       -13.726
-u_raw_colorbar_gen.pix_rgb[0]      top|w_pixclk     FD1S3AX     D       N_14_i              10.089       -13.621
-u_raw_colorbar_gen.pix_rgb[8]      top|w_pixclk     FD1S3AX     D       pix_rgb11           10.089       -13.621
-u_raw_colorbar_gen.pix_rgb[16]     top|w_pixclk     FD1S3AX     D       N_12_i              10.089       -13.621
-u_raw_colorbar_gen.linecnt[9]      top|w_pixclk     FD1S3AX     D       un65_linecnt[9]     10.089       0.204  
-u_raw_colorbar_gen.linecnt[7]      top|w_pixclk     FD1S3AX     D       un65_linecnt[7]     10.089       0.347  
-u_raw_colorbar_gen.linecnt[5]      top|w_pixclk     FD1S3AX     D       un65_linecnt[5]     10.089       0.490  
-u_raw_colorbar_gen.linecnt[6]      top|w_pixclk     FD1S3AX     D       un65_linecnt[6]     10.089       0.490  
-u_raw_colorbar_gen.linecnt[3]      top|w_pixclk     FD1S3AX     D       un65_linecnt[3]     10.089       0.633  
-u_raw_colorbar_gen.linecnt[8]      top|w_pixclk     FD1S3AX     D       un2_linecnt[8]      9.894        0.769  
-================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      10.000
-    - Setup time:                            -0.462
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.462
-
-    - Propagation time:                      24.188
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -13.726
-
-    Number of logic level(s):                22
+    Number of logic level(s):                21
     Starting point:                          u_raw_colorbar_gen.color_cntr[10] / Q
     Ending point:                            u_raw_colorbar_gen.raw_data[0] / D
-    The start point is clocked by            top|w_pixclk [rising] on pin CK
-    The end   point is clocked by            top|w_pixclk [rising] on pin CK
+    The start point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]                                            FD1S3AX      Q        Out     1.108     1.108       -         
-color_cntr[10]                                                               Net          -        -       -         -           3         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        A1       In      0.000     1.108       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        COUT     Out     1.544     2.652       -         
-mult1_un54_sum_cry_5                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        CIN      In      0.000     2.652       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        COUT     Out     0.143     2.795       -         
-mult1_un54_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        CIN      In      0.000     2.795       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        COUT     Out     0.143     2.938       -         
-mult1_un54_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        CIN      In      0.000     2.938       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        S0       Out     1.757     4.695       -         
-mult1_un54_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        A0       In      0.000     4.695       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        COUT     Out     1.544     6.239       -         
-mult1_un61_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        CIN      In      0.000     6.239       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        COUT     Out     0.143     6.382       -         
-mult1_un61_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        CIN      In      0.000     6.382       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        S0       Out     1.757     8.139       -         
-mult1_un61_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        A0       In      0.000     8.139       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        COUT     Out     1.544     9.684       -         
-mult1_un68_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        CIN      In      0.000     9.684       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        COUT     Out     0.143     9.826       -         
-mult1_un68_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        CIN      In      0.000     9.826       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        S0       Out     1.757     11.584      -         
-mult1_un68_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        A0       In      0.000     11.584      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        COUT     Out     1.544     13.128      -         
-mult1_un75_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        CIN      In      0.000     13.128      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        COUT     Out     0.143     13.271      -         
-mult1_un75_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        CIN      In      0.000     13.271      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        S0       Out     1.757     15.028      -         
-mult1_un75_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        A0       In      0.000     15.028      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        COUT     Out     1.544     16.572      -         
-mult1_un82_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        CIN      In      0.000     16.572      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        COUT     Out     0.143     16.715      -         
-mult1_un82_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        CIN      In      0.000     16.715      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        S0       Out     1.757     18.472      -         
-mult1_un82_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        A0       In      0.000     18.472      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        COUT     Out     1.544     20.017      -         
-mult1_un89_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        CIN      In      0.000     20.017      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        COUT     Out     0.143     20.159      -         
-mult1_un89_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        CIN      In      0.000     20.159      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        S0       Out     1.781     21.940      -         
-mult1_un89_sum_s_10_0_S0                                                     Net          -        -       -         -           7         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     D        In      0.000     21.940      -         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     Z        Out     1.017     22.957      -         
-raw_data_RNO_2[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     C        In      0.000     22.957      -         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     Z        Out     1.017     23.974      -         
-raw_data_RNO_0[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        ALUT     In      0.000     23.974      -         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        Z        Out     0.214     24.188      -         
-raw_data_8[0]                                                                Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data[0]                                               FD1S3AX      D        In      0.000     24.188      -         
-===========================================================================================================================================
+Instance / Net                                                                                            Pin      Pin               Arrival     No. of    
+Name                                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]                                                            FD1S3AX      Q        Out     0.838     0.838       -         
+color_cntr[10]                                                                               Net          -        -       -         -           3         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        A1       In      0.000     0.838       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        COUT     Out     0.784     1.622       -         
+mult1_un54_sum_cry_5                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        CIN      In      0.000     1.622       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        COUT     Out     0.059     1.681       -         
+mult1_un54_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        CIN      In      0.000     1.681       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        COUT     Out     0.059     1.740       -         
+mult1_un54_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        CIN      In      0.000     1.740       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        S0       Out     0.737     2.477       -         
+mult1_un54_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        A0       In      0.000     2.477       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        COUT     Out     0.784     3.260       -         
+mult1_un61_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        CIN      In      0.000     3.260       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        COUT     Out     0.059     3.320       -         
+mult1_un61_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        CIN      In      0.000     3.320       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        S0       Out     0.737     4.056       -         
+mult1_un61_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        A0       In      0.000     4.056       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        COUT     Out     0.784     4.840       -         
+mult1_un68_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        CIN      In      0.000     4.840       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        COUT     Out     0.059     4.899       -         
+mult1_un68_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        CIN      In      0.000     4.899       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        S0       Out     0.737     5.636       -         
+mult1_un68_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        A0       In      0.000     5.636       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        COUT     Out     0.784     6.420       -         
+mult1_un75_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        CIN      In      0.000     6.420       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        COUT     Out     0.059     6.479       -         
+mult1_un75_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        CIN      In      0.000     6.479       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        S0       Out     0.737     7.215       -         
+mult1_un75_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        A0       In      0.000     7.215       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        COUT     Out     0.784     7.999       -         
+mult1_un82_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        CIN      In      0.000     7.999       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        S0       Out     0.651     8.650       -         
+mult1_un89_sum_1_axb_9                                                                       Net          -        -       -         -           2         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        A1       In      0.000     8.650       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        COUT     Out     0.784     9.434       -         
+mult1_un89_sum_0_cry_9                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        CIN      In      0.000     9.434       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        S0       Out     0.717     10.151      -         
+mult1_un89_sum0[10]                                                                          Net          -        -       -         -           4         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     B        In      0.000     10.151      -         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     Z        Out     0.523     10.674      -         
+raw_data_RNO_8[0]                                                                            Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     D        In      0.000     10.674      -         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     Z        Out     0.523     11.197      -         
+raw_data_8_iv_0_1_tz_N_2_3_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0     Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     C        In      0.000     11.197      -         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     Z        Out     0.523     11.720      -         
+raw_data_8_iv_0_1_5[0]                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     D        In      0.000     11.720      -         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     Z        Out     0.343     12.063      -         
+raw_data_8[0]                                                                                Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data[0]                                                               FD1S3AX      D        In      0.000     12.063      -         
+===========================================================================================================================================================
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            -0.462
+    - Setup time:                            0.211
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.462
+    = Required time:                         9.789
 
-    - Propagation time:                      24.188
+    - Propagation time:                      12.063
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -13.726
+    = Slack (critical) :                     -2.274
 
-    Number of logic level(s):                22
+    Number of logic level(s):                21
     Starting point:                          u_raw_colorbar_gen.color_cntr[10] / Q
     Ending point:                            u_raw_colorbar_gen.raw_data[0] / D
-    The start point is clocked by            top|w_pixclk [rising] on pin CK
-    The end   point is clocked by            top|w_pixclk [rising] on pin CK
+    The start point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]                                            FD1S3AX      Q        Out     1.108     1.108       -         
-color_cntr[10]                                                               Net          -        -       -         -           3         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        A1       In      0.000     1.108       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        COUT     Out     1.544     2.652       -         
-mult1_un54_sum_cry_5                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        CIN      In      0.000     2.652       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        COUT     Out     0.143     2.795       -         
-mult1_un54_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        CIN      In      0.000     2.795       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        COUT     Out     0.143     2.938       -         
-mult1_un54_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        CIN      In      0.000     2.938       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        S0       Out     1.757     4.695       -         
-mult1_un54_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        A1       In      0.000     4.695       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        COUT     Out     1.544     6.239       -         
-mult1_un61_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        CIN      In      0.000     6.239       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        COUT     Out     0.143     6.382       -         
-mult1_un61_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        CIN      In      0.000     6.382       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        S0       Out     1.757     8.139       -         
-mult1_un61_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        A0       In      0.000     8.139       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        COUT     Out     1.544     9.684       -         
-mult1_un68_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        CIN      In      0.000     9.684       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        COUT     Out     0.143     9.826       -         
-mult1_un68_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        CIN      In      0.000     9.826       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        S0       Out     1.757     11.584      -         
-mult1_un68_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        A0       In      0.000     11.584      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        COUT     Out     1.544     13.128      -         
-mult1_un75_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        CIN      In      0.000     13.128      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        COUT     Out     0.143     13.271      -         
-mult1_un75_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        CIN      In      0.000     13.271      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        S0       Out     1.757     15.028      -         
-mult1_un75_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        A0       In      0.000     15.028      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        COUT     Out     1.544     16.572      -         
-mult1_un82_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        CIN      In      0.000     16.572      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        COUT     Out     0.143     16.715      -         
-mult1_un82_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        CIN      In      0.000     16.715      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        S0       Out     1.757     18.472      -         
-mult1_un82_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        A0       In      0.000     18.472      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        COUT     Out     1.544     20.017      -         
-mult1_un89_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        CIN      In      0.000     20.017      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        COUT     Out     0.143     20.159      -         
-mult1_un89_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        CIN      In      0.000     20.159      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        S0       Out     1.781     21.940      -         
-mult1_un89_sum_s_10_0_S0                                                     Net          -        -       -         -           7         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     D        In      0.000     21.940      -         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     Z        Out     1.017     22.957      -         
-raw_data_RNO_2[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     C        In      0.000     22.957      -         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     Z        Out     1.017     23.974      -         
-raw_data_RNO_0[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        ALUT     In      0.000     23.974      -         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        Z        Out     0.214     24.188      -         
-raw_data_8[0]                                                                Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data[0]                                               FD1S3AX      D        In      0.000     24.188      -         
-===========================================================================================================================================
+Instance / Net                                                                                            Pin      Pin               Arrival     No. of    
+Name                                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]                                                            FD1S3AX      Q        Out     0.838     0.838       -         
+color_cntr[10]                                                                               Net          -        -       -         -           3         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        A1       In      0.000     0.838       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        COUT     Out     0.784     1.622       -         
+mult1_un54_sum_cry_5                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        CIN      In      0.000     1.622       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        COUT     Out     0.059     1.681       -         
+mult1_un54_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        CIN      In      0.000     1.681       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        COUT     Out     0.059     1.740       -         
+mult1_un54_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        CIN      In      0.000     1.740       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        S0       Out     0.737     2.477       -         
+mult1_un54_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        A1       In      0.000     2.477       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        COUT     Out     0.784     3.260       -         
+mult1_un61_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        CIN      In      0.000     3.260       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        COUT     Out     0.059     3.320       -         
+mult1_un61_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        CIN      In      0.000     3.320       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        S0       Out     0.737     4.056       -         
+mult1_un61_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        A0       In      0.000     4.056       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        COUT     Out     0.784     4.840       -         
+mult1_un68_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        CIN      In      0.000     4.840       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        COUT     Out     0.059     4.899       -         
+mult1_un68_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        CIN      In      0.000     4.899       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        S0       Out     0.737     5.636       -         
+mult1_un68_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        A0       In      0.000     5.636       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        COUT     Out     0.784     6.420       -         
+mult1_un75_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        CIN      In      0.000     6.420       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        COUT     Out     0.059     6.479       -         
+mult1_un75_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        CIN      In      0.000     6.479       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        S0       Out     0.737     7.215       -         
+mult1_un75_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        A0       In      0.000     7.215       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        COUT     Out     0.784     7.999       -         
+mult1_un82_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        CIN      In      0.000     7.999       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        S0       Out     0.651     8.650       -         
+mult1_un89_sum_1_axb_9                                                                       Net          -        -       -         -           2         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        A1       In      0.000     8.650       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        COUT     Out     0.784     9.434       -         
+mult1_un89_sum_0_cry_9                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        CIN      In      0.000     9.434       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        S0       Out     0.717     10.151      -         
+mult1_un89_sum0[10]                                                                          Net          -        -       -         -           4         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     B        In      0.000     10.151      -         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     Z        Out     0.523     10.674      -         
+raw_data_RNO_8[0]                                                                            Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     D        In      0.000     10.674      -         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     Z        Out     0.523     11.197      -         
+raw_data_8_iv_0_1_tz_N_2_3_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0     Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     C        In      0.000     11.197      -         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     Z        Out     0.523     11.720      -         
+raw_data_8_iv_0_1_5[0]                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     D        In      0.000     11.720      -         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     Z        Out     0.343     12.063      -         
+raw_data_8[0]                                                                                Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data[0]                                                               FD1S3AX      D        In      0.000     12.063      -         
+===========================================================================================================================================================
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            -0.462
+    - Setup time:                            0.211
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.462
+    = Required time:                         9.789
 
-    - Propagation time:                      24.188
+    - Propagation time:                      12.063
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -13.726
+    = Slack (critical) :                     -2.274
 
-    Number of logic level(s):                22
+    Number of logic level(s):                21
     Starting point:                          u_raw_colorbar_gen.color_cntr[10] / Q
     Ending point:                            u_raw_colorbar_gen.raw_data[0] / D
-    The start point is clocked by            top|w_pixclk [rising] on pin CK
-    The end   point is clocked by            top|w_pixclk [rising] on pin CK
+    The start point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]                                            FD1S3AX      Q        Out     1.108     1.108       -         
-color_cntr[10]                                                               Net          -        -       -         -           3         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        A1       In      0.000     1.108       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        COUT     Out     1.544     2.652       -         
-mult1_un54_sum_cry_5                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        CIN      In      0.000     2.652       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        COUT     Out     0.143     2.795       -         
-mult1_un54_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        CIN      In      0.000     2.795       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        COUT     Out     0.143     2.938       -         
-mult1_un54_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        CIN      In      0.000     2.938       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        S0       Out     1.757     4.695       -         
-mult1_un54_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        A0       In      0.000     4.695       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        COUT     Out     1.544     6.239       -         
-mult1_un61_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        CIN      In      0.000     6.239       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        COUT     Out     0.143     6.382       -         
-mult1_un61_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        CIN      In      0.000     6.382       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        S0       Out     1.757     8.139       -         
-mult1_un61_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        A1       In      0.000     8.139       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        COUT     Out     1.544     9.684       -         
-mult1_un68_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        CIN      In      0.000     9.684       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        COUT     Out     0.143     9.826       -         
-mult1_un68_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        CIN      In      0.000     9.826       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        S0       Out     1.757     11.584      -         
-mult1_un68_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        A0       In      0.000     11.584      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        COUT     Out     1.544     13.128      -         
-mult1_un75_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        CIN      In      0.000     13.128      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        COUT     Out     0.143     13.271      -         
-mult1_un75_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        CIN      In      0.000     13.271      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        S0       Out     1.757     15.028      -         
-mult1_un75_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        A0       In      0.000     15.028      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        COUT     Out     1.544     16.572      -         
-mult1_un82_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        CIN      In      0.000     16.572      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        COUT     Out     0.143     16.715      -         
-mult1_un82_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        CIN      In      0.000     16.715      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        S0       Out     1.757     18.472      -         
-mult1_un82_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        A0       In      0.000     18.472      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        COUT     Out     1.544     20.017      -         
-mult1_un89_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        CIN      In      0.000     20.017      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        COUT     Out     0.143     20.159      -         
-mult1_un89_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        CIN      In      0.000     20.159      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        S0       Out     1.781     21.940      -         
-mult1_un89_sum_s_10_0_S0                                                     Net          -        -       -         -           7         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     D        In      0.000     21.940      -         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     Z        Out     1.017     22.957      -         
-raw_data_RNO_2[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     C        In      0.000     22.957      -         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     Z        Out     1.017     23.974      -         
-raw_data_RNO_0[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        ALUT     In      0.000     23.974      -         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        Z        Out     0.214     24.188      -         
-raw_data_8[0]                                                                Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data[0]                                               FD1S3AX      D        In      0.000     24.188      -         
-===========================================================================================================================================
+Instance / Net                                                                                            Pin      Pin               Arrival     No. of    
+Name                                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]                                                            FD1S3AX      Q        Out     0.838     0.838       -         
+color_cntr[10]                                                                               Net          -        -       -         -           3         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        A1       In      0.000     0.838       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        COUT     Out     0.784     1.622       -         
+mult1_un54_sum_cry_5                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        CIN      In      0.000     1.622       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        COUT     Out     0.059     1.681       -         
+mult1_un54_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        CIN      In      0.000     1.681       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        COUT     Out     0.059     1.740       -         
+mult1_un54_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        CIN      In      0.000     1.740       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        S0       Out     0.737     2.477       -         
+mult1_un54_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        A0       In      0.000     2.477       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        COUT     Out     0.784     3.260       -         
+mult1_un61_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        CIN      In      0.000     3.260       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        COUT     Out     0.059     3.320       -         
+mult1_un61_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        CIN      In      0.000     3.320       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        S0       Out     0.737     4.056       -         
+mult1_un61_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        A1       In      0.000     4.056       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        COUT     Out     0.784     4.840       -         
+mult1_un68_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        CIN      In      0.000     4.840       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        COUT     Out     0.059     4.899       -         
+mult1_un68_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        CIN      In      0.000     4.899       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        S0       Out     0.737     5.636       -         
+mult1_un68_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        A0       In      0.000     5.636       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        COUT     Out     0.784     6.420       -         
+mult1_un75_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        CIN      In      0.000     6.420       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        COUT     Out     0.059     6.479       -         
+mult1_un75_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        CIN      In      0.000     6.479       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        S0       Out     0.737     7.215       -         
+mult1_un75_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        A0       In      0.000     7.215       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        COUT     Out     0.784     7.999       -         
+mult1_un82_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        CIN      In      0.000     7.999       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        S0       Out     0.651     8.650       -         
+mult1_un89_sum_1_axb_9                                                                       Net          -        -       -         -           2         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        A1       In      0.000     8.650       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        COUT     Out     0.784     9.434       -         
+mult1_un89_sum_0_cry_9                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        CIN      In      0.000     9.434       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        S0       Out     0.717     10.151      -         
+mult1_un89_sum0[10]                                                                          Net          -        -       -         -           4         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     B        In      0.000     10.151      -         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     Z        Out     0.523     10.674      -         
+raw_data_RNO_8[0]                                                                            Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     D        In      0.000     10.674      -         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     Z        Out     0.523     11.197      -         
+raw_data_8_iv_0_1_tz_N_2_3_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0     Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     C        In      0.000     11.197      -         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     Z        Out     0.523     11.720      -         
+raw_data_8_iv_0_1_5[0]                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     D        In      0.000     11.720      -         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     Z        Out     0.343     12.063      -         
+raw_data_8[0]                                                                                Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data[0]                                                               FD1S3AX      D        In      0.000     12.063      -         
+===========================================================================================================================================================
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            -0.462
+    - Setup time:                            0.211
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.462
+    = Required time:                         9.789
 
-    - Propagation time:                      24.188
+    - Propagation time:                      12.063
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -13.726
+    = Slack (critical) :                     -2.274
 
-    Number of logic level(s):                22
+    Number of logic level(s):                21
     Starting point:                          u_raw_colorbar_gen.color_cntr[10] / Q
     Ending point:                            u_raw_colorbar_gen.raw_data[0] / D
-    The start point is clocked by            top|w_pixclk [rising] on pin CK
-    The end   point is clocked by            top|w_pixclk [rising] on pin CK
+    The start point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]                                            FD1S3AX      Q        Out     1.108     1.108       -         
-color_cntr[10]                                                               Net          -        -       -         -           3         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        A1       In      0.000     1.108       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        COUT     Out     1.544     2.652       -         
-mult1_un54_sum_cry_5                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        CIN      In      0.000     2.652       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        COUT     Out     0.143     2.795       -         
-mult1_un54_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        CIN      In      0.000     2.795       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        COUT     Out     0.143     2.938       -         
-mult1_un54_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        CIN      In      0.000     2.938       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        S0       Out     1.757     4.695       -         
-mult1_un54_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        A0       In      0.000     4.695       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        COUT     Out     1.544     6.239       -         
-mult1_un61_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        CIN      In      0.000     6.239       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        COUT     Out     0.143     6.382       -         
-mult1_un61_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        CIN      In      0.000     6.382       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        S0       Out     1.757     8.139       -         
-mult1_un61_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        A0       In      0.000     8.139       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        COUT     Out     1.544     9.684       -         
-mult1_un68_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        CIN      In      0.000     9.684       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        COUT     Out     0.143     9.826       -         
-mult1_un68_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        CIN      In      0.000     9.826       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        S0       Out     1.757     11.584      -         
-mult1_un68_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        A1       In      0.000     11.584      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        COUT     Out     1.544     13.128      -         
-mult1_un75_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        CIN      In      0.000     13.128      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        COUT     Out     0.143     13.271      -         
-mult1_un75_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        CIN      In      0.000     13.271      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        S0       Out     1.757     15.028      -         
-mult1_un75_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        A0       In      0.000     15.028      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        COUT     Out     1.544     16.572      -         
-mult1_un82_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        CIN      In      0.000     16.572      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        COUT     Out     0.143     16.715      -         
-mult1_un82_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        CIN      In      0.000     16.715      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        S0       Out     1.757     18.472      -         
-mult1_un82_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        A0       In      0.000     18.472      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        COUT     Out     1.544     20.017      -         
-mult1_un89_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        CIN      In      0.000     20.017      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        COUT     Out     0.143     20.159      -         
-mult1_un89_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        CIN      In      0.000     20.159      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        S0       Out     1.781     21.940      -         
-mult1_un89_sum_s_10_0_S0                                                     Net          -        -       -         -           7         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     D        In      0.000     21.940      -         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     Z        Out     1.017     22.957      -         
-raw_data_RNO_2[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     C        In      0.000     22.957      -         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     Z        Out     1.017     23.974      -         
-raw_data_RNO_0[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        ALUT     In      0.000     23.974      -         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        Z        Out     0.214     24.188      -         
-raw_data_8[0]                                                                Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data[0]                                               FD1S3AX      D        In      0.000     24.188      -         
-===========================================================================================================================================
+Instance / Net                                                                                            Pin      Pin               Arrival     No. of    
+Name                                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]                                                            FD1S3AX      Q        Out     0.838     0.838       -         
+color_cntr[10]                                                                               Net          -        -       -         -           3         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        A1       In      0.000     0.838       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        COUT     Out     0.784     1.622       -         
+mult1_un54_sum_cry_5                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        CIN      In      0.000     1.622       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        COUT     Out     0.059     1.681       -         
+mult1_un54_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        CIN      In      0.000     1.681       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        COUT     Out     0.059     1.740       -         
+mult1_un54_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        CIN      In      0.000     1.740       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        S0       Out     0.737     2.477       -         
+mult1_un54_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        A0       In      0.000     2.477       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        COUT     Out     0.784     3.260       -         
+mult1_un61_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        CIN      In      0.000     3.260       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        COUT     Out     0.059     3.320       -         
+mult1_un61_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        CIN      In      0.000     3.320       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        S0       Out     0.737     4.056       -         
+mult1_un61_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        A0       In      0.000     4.056       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        COUT     Out     0.784     4.840       -         
+mult1_un68_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        CIN      In      0.000     4.840       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        COUT     Out     0.059     4.899       -         
+mult1_un68_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        CIN      In      0.000     4.899       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        S0       Out     0.737     5.636       -         
+mult1_un68_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        A1       In      0.000     5.636       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        COUT     Out     0.784     6.420       -         
+mult1_un75_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        CIN      In      0.000     6.420       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        COUT     Out     0.059     6.479       -         
+mult1_un75_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        CIN      In      0.000     6.479       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        S0       Out     0.737     7.215       -         
+mult1_un75_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        A0       In      0.000     7.215       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        COUT     Out     0.784     7.999       -         
+mult1_un82_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        CIN      In      0.000     7.999       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        S0       Out     0.651     8.650       -         
+mult1_un89_sum_1_axb_9                                                                       Net          -        -       -         -           2         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        A1       In      0.000     8.650       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        COUT     Out     0.784     9.434       -         
+mult1_un89_sum_0_cry_9                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        CIN      In      0.000     9.434       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        S0       Out     0.717     10.151      -         
+mult1_un89_sum0[10]                                                                          Net          -        -       -         -           4         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     B        In      0.000     10.151      -         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     Z        Out     0.523     10.674      -         
+raw_data_RNO_8[0]                                                                            Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     D        In      0.000     10.674      -         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     Z        Out     0.523     11.197      -         
+raw_data_8_iv_0_1_tz_N_2_3_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0     Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     C        In      0.000     11.197      -         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     Z        Out     0.523     11.720      -         
+raw_data_8_iv_0_1_5[0]                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     D        In      0.000     11.720      -         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     Z        Out     0.343     12.063      -         
+raw_data_8[0]                                                                                Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data[0]                                                               FD1S3AX      D        In      0.000     12.063      -         
+===========================================================================================================================================================
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            -0.462
+    - Setup time:                            0.211
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.462
+    = Required time:                         9.789
 
-    - Propagation time:                      24.188
+    - Propagation time:                      12.063
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -13.726
+    = Slack (critical) :                     -2.274
 
-    Number of logic level(s):                22
+    Number of logic level(s):                21
     Starting point:                          u_raw_colorbar_gen.color_cntr[10] / Q
     Ending point:                            u_raw_colorbar_gen.raw_data[0] / D
-    The start point is clocked by            top|w_pixclk [rising] on pin CK
-    The end   point is clocked by            top|w_pixclk [rising] on pin CK
+    The start point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            pll_sensor_clk|CLKOP_inferred_clock [rising] on pin CK
 
-Instance / Net                                                                            Pin      Pin               Arrival     No. of    
-Name                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------
-u_raw_colorbar_gen.color_cntr[10]                                            FD1S3AX      Q        Out     1.108     1.108       -         
-color_cntr[10]                                                               Net          -        -       -         -           3         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        A1       In      0.000     1.108       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0     CCU2D        COUT     Out     1.544     2.652       -         
-mult1_un54_sum_cry_5                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        CIN      In      0.000     2.652       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0     CCU2D        COUT     Out     0.143     2.795       -         
-mult1_un54_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        CIN      In      0.000     2.795       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0     CCU2D        COUT     Out     0.143     2.938       -         
-mult1_un54_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        CIN      In      0.000     2.938       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0      CCU2D        S0       Out     1.757     4.695       -         
-mult1_un54_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        A0       In      0.000     4.695       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0     CCU2D        COUT     Out     1.544     6.239       -         
-mult1_un61_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        CIN      In      0.000     6.239       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0     CCU2D        COUT     Out     0.143     6.382       -         
-mult1_un61_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        CIN      In      0.000     6.382       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0      CCU2D        S0       Out     1.757     8.139       -         
-mult1_un61_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        A0       In      0.000     8.139       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0     CCU2D        COUT     Out     1.544     9.684       -         
-mult1_un68_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        CIN      In      0.000     9.684       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0     CCU2D        COUT     Out     0.143     9.826       -         
-mult1_un68_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        CIN      In      0.000     9.826       -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0      CCU2D        S0       Out     1.757     11.584      -         
-mult1_un68_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        A0       In      0.000     11.584      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0     CCU2D        COUT     Out     1.544     13.128      -         
-mult1_un75_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        CIN      In      0.000     13.128      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0     CCU2D        COUT     Out     0.143     13.271      -         
-mult1_un75_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        CIN      In      0.000     13.271      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0      CCU2D        S0       Out     1.757     15.028      -         
-mult1_un75_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        A1       In      0.000     15.028      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0     CCU2D        COUT     Out     1.544     16.572      -         
-mult1_un82_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        CIN      In      0.000     16.572      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0     CCU2D        COUT     Out     0.143     16.715      -         
-mult1_un82_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        CIN      In      0.000     16.715      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_s_10_0      CCU2D        S0       Out     1.757     18.472      -         
-mult1_un82_sum_s_10_0_S0                                                     Net          -        -       -         -           5         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        A0       In      0.000     18.472      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_6_0     CCU2D        COUT     Out     1.544     20.017      -         
-mult1_un89_sum_cry_7                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        CIN      In      0.000     20.017      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_cry_8_0     CCU2D        COUT     Out     0.143     20.159      -         
-mult1_un89_sum_cry_9                                                         Net          -        -       -         -           1         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        CIN      In      0.000     20.159      -         
-u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_s_10_0      CCU2D        S0       Out     1.781     21.940      -         
-mult1_un89_sum_s_10_0_S0                                                     Net          -        -       -         -           7         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     D        In      0.000     21.940      -         
-u_raw_colorbar_gen.raw_data_RNO_2[0]                                         ORCALUT4     Z        Out     1.017     22.957      -         
-raw_data_RNO_2[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     C        In      0.000     22.957      -         
-u_raw_colorbar_gen.raw_data_RNO_0[0]                                         ORCALUT4     Z        Out     1.017     23.974      -         
-raw_data_RNO_0[0]                                                            Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        ALUT     In      0.000     23.974      -         
-u_raw_colorbar_gen.raw_data_RNO[0]                                           PFUMX        Z        Out     0.214     24.188      -         
-raw_data_8[0]                                                                Net          -        -       -         -           1         
-u_raw_colorbar_gen.raw_data[0]                                               FD1S3AX      D        In      0.000     24.188      -         
-===========================================================================================================================================
-
-
-
-
-====================================
-Detailed Report for Clock: System
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                                                                                   Starting                                                                                                                       Arrival          
-Instance                                                                           Reference     Type                                                                              Pin           Net              Time        Slack
-                                                                                   Clock                                                                                                                                           
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.jtagconn16_inst_0                                      System        jtagconn16                                                                        jce2          jce2[0]          0.000       2.778
-top_reveal_coretop_instance.jtagconn16_inst_0                                      System        jtagconn16                                                                        jshift        jshift[0]        0.000       2.778
-top_reveal_coretop_instance.jtagconn16_inst_0                                      System        jtagconn16                                                                        ip_enable     ip_enable[0]     0.000       5.157
-top_reveal_coretop_instance.jtagconn16_inst_0                                      System        jtagconn16                                                                        jrstn         jrstn[0]         0.000       7.767
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_1.genblk1\.te_tt_dist_ram     System        pmi_distributed_dpram_8s_3s_2s_reg_none_binary_XO3LF_pmi_distributed_dpram_Z4     Q[0]          tt_out[0]        0.000       8.279
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_2.genblk1\.te_tt_dist_ram     System        pmi_distributed_dpram_8s_3s_2s_reg_none_binary_XO3LF_pmi_distributed_dpram_Z4     Q[0]          tt_out[0]        0.000       8.279
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_2.genblk1\.te_tt_dist_ram     System        pmi_distributed_dpram_8s_3s_2s_reg_none_binary_XO3LF_pmi_distributed_dpram_Z4     Q[1]          tt_out[1]        0.000       8.279
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_1.genblk1\.te_tt_dist_ram     System        pmi_distributed_dpram_8s_3s_2s_reg_none_binary_XO3LF_pmi_distributed_dpram_Z4     Q[1]          tt_out[1]        0.000       8.279
-top_reveal_coretop_instance.top_la0_inst_0.trig_u.te_0.genblk1\.te_tt_ebr_ram      System        pmi_ram_dp_Z2                                                                     Q[0]          tt_out[0]        0.000       8.383
-top_reveal_coretop_instance.jtagconn16_inst_0                                      System        jtagconn16                                                                        jtdi          jtdi[0]          0.000       8.455
-===================================================================================================================================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                                                                        Starting                                                    Required          
-Instance                                                                Reference     Type        Pin     Net                       Time         Slack
-                                                                        Clock                                                                         
-------------------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc       System        FD1P3DX     D       parity_calc_5             10.089       2.778
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[9]      System        FD1P3DX     D       tm_rd_addr_cntr_s[9]      9.894        3.579
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[10]     System        FD1P3DX     D       tm_rd_addr_cntr_s[10]     9.894        3.579
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[7]      System        FD1P3DX     D       tm_rd_addr_cntr_s[7]      9.894        3.722
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[8]      System        FD1P3DX     D       tm_rd_addr_cntr_s[8]      9.894        3.722
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tm_crc[0]         System        FD1P3BX     D       tm_crc_7[0]               10.089       3.795
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[5]      System        FD1P3DX     D       tm_rd_addr_cntr_s[5]      9.894        3.865
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[6]      System        FD1P3DX     D       tm_rd_addr_cntr_s[6]      9.894        3.865
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[3]      System        FD1P3DX     D       tm_rd_addr_cntr_s[3]      9.894        4.008
-top_reveal_coretop_instance.top_la0_inst_0.tm_u.tm_rd_addr_cntr[4]      System        FD1P3DX     D       tm_rd_addr_cntr_s[4]      9.894        4.008
-======================================================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      10.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.089
-
-    - Propagation time:                      7.310
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 2.778
-
-    Number of logic level(s):                7
-    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jce2
-    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] on pin CK
-
-Instance / Net                                                                                  Pin      Pin               Arrival     No. of    
-Name                                                                             Type           Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------------------------------------
-top_reveal_coretop_instance.jtagconn16_inst_0                                    jtagconn16     jce2     Out     0.000     0.000       -         
-jce2[0]                                                                          Net            -        -       -         -           14        
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNI8QF21              ORCALUT4       A        In      0.000     0.000       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNI8QF21              ORCALUT4       Z        Out     1.362     1.362       -         
-capture_dr                                                                       Net            -        -       -         -           31        
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_m2_1             ORCALUT4       A        In      0.000     1.362       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_m2_1             ORCALUT4       Z        Out     1.017     2.378       -         
-N_69                                                                             Net            -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5_1              ORCALUT4       A        In      0.000     2.378       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5_1              ORCALUT4       Z        Out     1.017     3.395       -         
-jtdo_iv_i_5_1                                                                    Net            -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5_4              ORCALUT4       B        In      0.000     3.395       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5_4              ORCALUT4       Z        Out     1.089     4.484       -         
-jtdo_iv_i_5_4                                                                    Net            -        -       -         -           2         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5                ORCALUT4       B        In      0.000     4.484       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jtdo_iv_i_5                ORCALUT4       Z        Out     1.193     5.677       -         
-N_911                                                                            Net            -        -       -         -           4         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4       B        In      0.000     5.677       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0_0     ORCALUT4       Z        Out     1.017     6.694       -         
-parity_calc_5_iv_0_0_0                                                           Net            -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4       C        In      0.000     6.694       -         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_5_iv_0_0       ORCALUT4       Z        Out     0.617     7.310       -         
-parity_calc_5                                                                    Net            -        -       -         -           1         
-top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX        D        In      0.000     7.310       -         
-=================================================================================================================================================
+Instance / Net                                                                                            Pin      Pin               Arrival     No. of    
+Name                                                                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_raw_colorbar_gen.color_cntr[10]                                                            FD1S3AX      Q        Out     0.838     0.838       -         
+color_cntr[10]                                                                               Net          -        -       -         -           3         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        A1       In      0.000     0.838       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_5_0                     CCU2C        COUT     Out     0.784     1.622       -         
+mult1_un54_sum_cry_5                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        CIN      In      0.000     1.622       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_6_0                     CCU2C        COUT     Out     0.059     1.681       -         
+mult1_un54_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        CIN      In      0.000     1.681       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_cry_8_0                     CCU2C        COUT     Out     0.059     1.740       -         
+mult1_un54_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        CIN      In      0.000     1.740       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un54_sum_s_10_0                      CCU2C        S0       Out     0.737     2.477       -         
+mult1_un54_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        A0       In      0.000     2.477       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_6_0                     CCU2C        COUT     Out     0.784     3.260       -         
+mult1_un61_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        CIN      In      0.000     3.260       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_cry_8_0                     CCU2C        COUT     Out     0.059     3.320       -         
+mult1_un61_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        CIN      In      0.000     3.320       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un61_sum_s_10_0                      CCU2C        S0       Out     0.737     4.056       -         
+mult1_un61_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        A0       In      0.000     4.056       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_6_0                     CCU2C        COUT     Out     0.784     4.840       -         
+mult1_un68_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        CIN      In      0.000     4.840       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_cry_8_0                     CCU2C        COUT     Out     0.059     4.899       -         
+mult1_un68_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        CIN      In      0.000     4.899       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un68_sum_s_10_0                      CCU2C        S0       Out     0.737     5.636       -         
+mult1_un68_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        A0       In      0.000     5.636       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_6_0                     CCU2C        COUT     Out     0.784     6.420       -         
+mult1_un75_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        CIN      In      0.000     6.420       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_cry_8_0                     CCU2C        COUT     Out     0.059     6.479       -         
+mult1_un75_sum_cry_9                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        CIN      In      0.000     6.479       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un75_sum_s_10_0                      CCU2C        S0       Out     0.737     7.215       -         
+mult1_un75_sum_s_10_0_S0                                                                     Net          -        -       -         -           5         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        A1       In      0.000     7.215       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_6_0                     CCU2C        COUT     Out     0.784     7.999       -         
+mult1_un82_sum_cry_7                                                                         Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        CIN      In      0.000     7.999       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un82_sum_cry_8_0                     CCU2C        S0       Out     0.651     8.650       -         
+mult1_un89_sum_1_axb_9                                                                       Net          -        -       -         -           2         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        A1       In      0.000     8.650       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_cry_8_0                   CCU2C        COUT     Out     0.784     9.434       -         
+mult1_un89_sum_0_cry_9                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        CIN      In      0.000     9.434       -         
+u_raw_colorbar_gen.un4_raw_data.if_generate_plus\.mult1_un89_sum_0_s_10_0                    CCU2C        S0       Out     0.717     10.151      -         
+mult1_un89_sum0[10]                                                                          Net          -        -       -         -           4         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     B        In      0.000     10.151      -         
+u_raw_colorbar_gen.raw_data_RNO_8[0]                                                         ORCALUT4     Z        Out     0.523     10.674      -         
+raw_data_RNO_8[0]                                                                            Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     D        In      0.000     10.674      -         
+u_raw_colorbar_gen.raw_data_RNO_5[0]                                                         ORCALUT4     Z        Out     0.523     11.197      -         
+raw_data_8_iv_0_1_tz_N_2_3_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0     Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     C        In      0.000     11.197      -         
+u_raw_colorbar_gen.raw_data_RNO_2[0]                                                         ORCALUT4     Z        Out     0.523     11.720      -         
+raw_data_8_iv_0_1_5[0]                                                                       Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     D        In      0.000     11.720      -         
+u_raw_colorbar_gen.raw_data_RNO[0]                                                           ORCALUT4     Z        Out     0.343     12.063      -         
+raw_data_8[0]                                                                                Net          -        -       -         -           1         
+u_raw_colorbar_gen.raw_data[0]                                                               FD1S3AX      D        In      0.000     12.063      -         
+===========================================================================================================================================================
 
 
 
@@ -919,45 +678,40 @@ top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc               
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 160MB peak: 165MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 160MB peak: 165MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
 
 ---------------------------------------
 Resource Usage Report
-Part: lcmxo3lf_9400c-6
+Part: lfe5um_85f-8
 
-Register bits: 546 of 9400 (6%)
+Register bits: 36 of 83640 (0%)
 PIC Latch:       0
-I/O cells:       14
+I/O cells:       15
 
 
 Details:
-CCU2D:          102
-EHXPLLJ:        1
-FD1P3AX:        18
-FD1P3BX:        33
-FD1P3DX:        360
-FD1S3AX:        39
-FD1S3BX:        5
-FD1S3DX:        91
+CCU2C:          52
+EHXPLLL:        1
+FD1S3AX:        35
 GSR:            1
-INV:            21
-L6MUX21:        3
+IB:             1
+INV:            1
 OB:             13
 OBZ:            1
-ORCALUT4:       643
-OSCH:           1
-PFUMX:          28
+OFS1P3DX:       1
+ORCALUT4:       48
+PFUMX:          1
 PUR:            1
-VHI:            15
-VLO:            16
+VHI:            2
+VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 35MB peak: 165MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 151MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Thu Apr 23 09:47:11 2020
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Apr 24 15:44:11 2020
 
 ###########################################################]
